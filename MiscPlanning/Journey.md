@@ -12,3 +12,6 @@ More personal report ish for me to look up at later.
 - Created Notes, for misc notes i makes. Things i need to do and so on.
 - Created Journey.md to document what i am doing and when.
 - Created ToDo.md as clear what to do file, in case i get lost.
+- Added an \_redirects file, to help with routing on netlify.
+- Upgraded the folder and file structure.
+- Added the css given in the styleguide. And structured it with Mobile first mentality, then Desktop.

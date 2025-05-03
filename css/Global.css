@@ -1,0 +1,114 @@
+/* ===== Global CSS - Will affect all pages ===== */
+
+/* Base CSS - Going Mobile First Approach */
+body {
+  font-family: Arimo, sans-serif;
+  background-color: #f7f2de;
+  font-size: 16px;
+}
+
+/* Large Body text */
+.large-body {
+  font-size: 18px;
+}
+
+.primaryText {
+  color: #0b0a08;
+}
+
+.secondaryText {
+  color: #ffffff;
+}
+
+.colorRed {
+  color: #dc4131;
+}
+
+.colorLightBlue {
+  color: #e1eaf0;
+}
+
+.colorGreen {
+  color: #008f51;
+}
+
+/* Main Button Styling - Better Name Suggestion: primaryButton */
+.primaryButton {
+  background-color: #dc4131;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.primaryButton:hover {
+  background-color: #ae2e21;
+  text-decoration: underline;
+}
+
+/* Icon Button */
+.iconButton {
+  opacity: 1;
+}
+
+.iconButton:hover {
+  opacity: 0.4;
+}
+
+/* Specific Elements */
+
+/* Logo */
+.logo {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 300;
+  font-size: 75px;
+}
+
+/* Header */
+.header {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* Sub-Header */
+.subHeader {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Accent Text */
+.accentText {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* Desktop Styles: When the screen is 1024px or larger */
+@media (min-width: 1024px) {
+  /* Large Body Text */
+  .large-body {
+    font-size: 20px;
+  }
+
+  /* Logo */
+  .logo {
+    font-size: 200px;
+  }
+
+  /* Header */
+  .header {
+    font-size: 36px;
+  }
+
+  /* Sub-header */
+  .subHeader {
+    font-size: 20px;
+  }
+
+  /* Accent Text */
+  .accentText {
+    font-size: 20px;
+  }
+}
