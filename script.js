@@ -1,0 +1,3 @@
+const testConnection = () => {
+  alert("Hello");
+};
