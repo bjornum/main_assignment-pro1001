@@ -19,3 +19,4 @@ More personal report ish for me to look up at later.
 # 04.05.2025
 
 - Just roughly made the landing page with all its element. It is hardcoded, style instead of classes, and rough looking for now.
+- Produce page v1 done.
