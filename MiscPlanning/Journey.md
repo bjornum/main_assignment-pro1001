@@ -15,3 +15,7 @@ More personal report ish for me to look up at later.
 - Added an \_redirects file, to help with routing on netlify.
 - Upgraded the folder and file structure.
 - Added the css given in the styleguide. And structured it with Mobile first mentality, then Desktop.
+
+# 04.05.2025
+
+- Just roughly made the landing page with all its element. It is hardcoded, style instead of classes, and rough looking for now.

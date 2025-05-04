@@ -12,8 +12,152 @@
     <link rel="stylesheet" href="./css/Global.css" />
   </head>
   <body>
-    <h1 class="logo">Final Assignment</h1>
-    <button class="generalButton" onclick="testConnection()">Clicky</button>
+    <!-- Navbar -->
+    <nav></nav>
+    <!-- Main -->
+    <main>
+      <!-- Large Image -->
+      <section>
+        <img
+          src="./assets/landingPage/markus-spiske-WcLzVLbUP5g-unsplash.jpg"
+          alt=""
+          width="100%"
+          style="object-fit: cover"
+        />
+      </section>
+      <!-- Product Section -->
+      <section style="padding: 20px">
+        <h2 class="header" style="text-align: center">
+          Shop our seasonal selection
+        </h2>
+        <p style="text-align: center">Updated every week</p>
+        <img
+          src="./assets/landingPage/nina-luong-dp06f70Eyvc-unsplash.jpg"
+          alt=""
+          width="100%"
+          style="object-fit: cover"
+        />
+        <p>
+          New produce is added continously as time goes by and the seasons
+          change
+        </p>
+        <button>Browse our selection</button>
+      </section>
+      <hr />
+      <!-- Go to Chat page -->
+      <section>
+        <h2 class="header" style="text-align: center">Ask us about anything</h2>
+        <p>All your questions answered</p>
+        <img
+          src="./assets/landingPage/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
+          alt=""
+          width="100%"
+          style="object-fit: cover"
+        />
+        <p>
+          New produce is added continously as time goes by and the seasons
+          change.
+        </p>
+        <button>Go to chat</button>
+      </section>
+      <!-- Info sections -->
+      <section>
+        <!-- Info Block -->
+        <section>
+          <h2 class="header" style="text-align: center">
+            This is how it works
+          </h2>
+        </section>
+        <!-- Order Groceries Block -->
+        <section>
+          <h3 class="subHeader" style="text-align: center">Order Groceries</h3>
+          <p>
+            Fram is a circular service that ensures your kitchen is always
+            stocked with the essentials you need. Browse our seasonal selection,
+            choose your items and place your order online.
+          </p>
+          <a href="./pages/products.html">See our stock here</a>
+        </section>
+        <!-- Stock up Block -->
+        <section>
+          <h3 class="subHeader" style="text-align: center">Stock up</h3>
+          <p>
+            Once your order arrives, unpack the produce and store it however it
+            works best for you. Hold onto the containers - they are yours to
+            keep until your next order
+          </p>
+        </section>
+        <!-- Scan and Reorder Block -->
+        <section>
+          <h3 class="subHeader" style="text-align: center">Scan & reuse</h3>
+          <p>
+            Ready for a refill? Grab the containers from your last order and
+            scan the QR code with our app or your phone's camera. This instantly
+            adds the items back to your cart, making reordering a breeze.
+          </p>
+        </section>
+        <!-- Swap and Reuse Block -->
+        <section>
+          <h3 class="subHeader" style="text-align: center">Swap & reuse</h3>
+          <p>
+            When we deliver your new order, simply leave your empty containers
+            outside. We'll pick them up, clean them thoroughly and reuse them
+            for future deliveries.
+          </p>
+        </section>
+      </section>
+      <!-- Popular Produce Section -->
+      <section>
+        <h2 class="header" style="text-align: center">Popular produce</h2>
+        <!-- Below will come from JS and be like a sidereel, where one can click and add to basket. -->
+        <!-- Example -->
+        <img
+          src="./assets/productPage/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
+          alt=""
+          width="100%"
+          style="object-fit: cover"
+        />
+        <button>
+          <span> Add to basket </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+              />
+            </svg>
+          </span>
+        </button>
+        <p>
+          <span>Oats</span>
+          <span>48 kr / kg</span>
+        </p>
+        <p>1 kg</p>
+      </section>
+      <!-- Newsletter section -->
+      <section>
+        <h1>FRAM</h1>
+        <hr />
+        <h3 class="subHeader" style="text-align: center">Stay Updated</h3>
+        <p>
+          Sign up for our newsletter to be the first to know about new produce
+          or other exciting news!
+        </p>
+        <form>
+          <input type="text" placeholder="First Name" />
+          <input type="email" placeholder="E-mail adress" />
+          <button>Send</button>
+        </form>
+      </section>
+    </main>
     <script src="./js/script.js"></script>
   </body>
 </html>
