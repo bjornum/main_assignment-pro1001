@@ -1,6 +1,10 @@
 /* ===== Global CSS - Will affect all pages ===== */
 
 /* Base CSS - Going Mobile First Approach */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arimo, sans-serif;
   font-size: 16px;
@@ -13,49 +17,75 @@ body {
   font-size: 18px;
 }
 
-.primaryText {
+.primary-text {
   color: #0b0a08;
 }
 
-.secondaryText {
+.secondary-text {
   color: #ffffff;
 }
 
-.primaryBackground {
+.primary-background-color {
   background-color: #f7f2de;
 }
 
-.colorRed {
+.color-red {
   color: #dc4131;
 }
 
-.colorLightBlue {
+.color-Light-blue {
   color: #e1eaf0;
 }
 
-.colorGreen {
+.color-green {
   color: #008f51;
 }
 
-/* Main Button Styling - Better Name Suggestion: primaryButton */
-.primaryButton {
+/* Main Button */
+.primary-button {
   background-color: #dc4131;
   color: #ffffff;
   text-decoration: none;
 }
 
-.primaryButton:hover {
+.primary-button:hover {
   background-color: #ae2e21;
   text-decoration: underline;
 }
 
 /* Icon Button */
-.iconButton {
+.icon-button {
   opacity: 1;
 }
 
-.iconButton:hover {
+.icon-button:hover {
   opacity: 0.4;
+}
+
+/* Helper Classes */
+.center-items {
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.general-border {
+  /* border: 1px solid black; */
+  outline: black 1px solid;
 }
 
 /* Specific Elements */
@@ -76,7 +106,7 @@ body {
 }
 
 /* Sub-Header */
-.subHeader {
+.sub-header {
   font-family: "Arimo", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -84,7 +114,7 @@ body {
 }
 
 /* Accent Text */
-.accentText {
+.accent-text {
   font-family: "Frank Ruhl Libre", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -108,12 +138,12 @@ body {
   }
 
   /* Sub-header */
-  .subHeader {
+  .sub-header {
     font-size: 20px;
   }
 
   /* Accent Text */
-  .accentText {
+  .accent-text {
     font-size: 20px;
   }
 }

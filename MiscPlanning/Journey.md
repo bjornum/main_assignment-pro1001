@@ -20,3 +20,8 @@ More personal report ish for me to look up at later.
 
 - Just roughly made the landing page with all its element. It is hardcoded, style instead of classes, and rough looking for now.
 - Produce page v1 done.
+- Cleaned up all css, following the BEM method now. So button-info instead of buttonInfo. Inspired by how tailwind works
+- Added another css file, where Landing Page are in focus.
+- Completed Layout of the Produce and Chatbox section
+- Completed Layout of the Info section that i call it.
+- Cleaned all inline styling, and made reusable classes instead

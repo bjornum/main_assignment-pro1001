@@ -1,0 +1,106 @@
+/* All css that are specified to the landing page */
+
+/* ===== Produce and Chatbot Section ===== */
+.produce-chat-container {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.produce-chat-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ===== Info Section (This is how it works section) ===== */
+.info-section {
+  flex-direction: column;
+}
+
+.info-title {
+  padding: 40px 20px;
+}
+
+.info-steps {
+  flex-direction: column;
+}
+
+.info-header {
+  padding-top: 90px;
+  padding-bottom: 45px;
+}
+
+/* Kept as needing to adjust this between screen sizes */
+.info-sub-header {
+  text-align: center;
+}
+
+/* Desktop Styles: When the screen is 1024px or larger */
+@media (min-width: 1024px) {
+  /* ===== Produce and Chat Section Layout ===== */
+  .produce-chat-container {
+    flex-direction: row;
+  }
+
+  .produce-chat-image {
+    width: 448px;
+    height: 327px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .produce-chat-card {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* ===== Info Section ===== */
+  .info-section {
+    flex-direction: row;
+    height: 785px;
+  }
+
+  .info-title {
+    flex: 1;
+    max-width: 33%;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .info-title .header {
+    font-size: 2rem;
+  }
+
+  .info-steps {
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .info-step {
+    height: 197px;
+    padding-left: 90px;
+    padding-right: 20px;
+    position: relative;
+  }
+
+  .info-header {
+    padding-top: none;
+    padding-bottom: none;
+  }
+
+  .info-sub-header {
+    width: 278px;
+    margin: 0;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+  .info-content {
+    flex: 1;
+    padding-right: 197px;
+  }
+}

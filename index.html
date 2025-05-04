@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/Global.css" />
+    <link rel="stylesheet" href="./css/LandingPage.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -22,100 +23,121 @@
           src="./assets/landingPage/markus-spiske-WcLzVLbUP5g-unsplash.jpg"
           alt=""
           width="100%"
-          style="object-fit: cover"
+          class="object-fit-cover"
         />
       </section>
-      <!-- Product Section -->
-      <section style="padding: 20px">
-        <h2 class="header" style="text-align: center">
-          Shop our seasonal selection
-        </h2>
-        <p style="text-align: center">Updated every week</p>
-        <img
-          src="./assets/landingPage/nina-luong-dp06f70Eyvc-unsplash.jpg"
-          alt=""
-          width="100%"
-          style="object-fit: cover"
-        />
-        <p>
-          New produce is added continously as time goes by and the seasons
-          change
-        </p>
-        <button>Browse our selection</button>
+      <div class="produce-chat-container display-flex">
+        <!-- Produce Section -->
+        <section class="produce-chat-card center-items center-text">
+          <h2 class="header">Shop our seasonal selection</h2>
+          <p>Updated every week</p>
+          <img
+            src="./assets/landingPage/nina-luong-dp06f70Eyvc-unsplash.jpg"
+            alt="Produce"
+            class="produce-chat-image"
+          />
+          <p>
+            New produce is added continuously as time goes by and the seasons
+            change.
+          </p>
+          <button>Browse our selection</button>
+        </section>
+
+        <!-- Go to Chat page -->
+        <section class="produce-chat-card center-items center-text padding-20">
+          <h2 class="header">Ask us about anything</h2>
+          <p>All your questions answered</p>
+          <img
+            src="./assets/landingPage/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
+            alt="Chat"
+            class="produce-chat-image"
+          />
+          <p>
+            New produce is added continuously as time goes by and the seasons
+            change.
+          </p>
+          <button>Go to chat</button>
+        </section>
+      </div>
+
+      <!-- Info Sections  -->
+      <section class="info-section primary-background-color display-flex">
+        <!-- Right Side: Title -->
+        <section
+          class="info-title display-flex center-items center-text general-border"
+        >
+          <h2 class="header info-header">This is how it works</h2>
+        </section>
+
+        <!-- Left Side: Steps -->
+        <div class="info-steps display-flex general-border">
+          <!-- Each step block -->
+          <section
+            class="info-step display-flex center-items padding-20 general-border"
+          >
+            <h3 class="info-sub-header">Order Groceries</h3>
+            <div class="info-content">
+              <p>
+                Fram is a circular service that ensures your kitchen is always
+                stocked with the essentials you need. Browse our seasonal
+                selection, choose your items and place your order online.
+              </p>
+              <a href="./pages/products.html">See our stock here</a>
+            </div>
+          </section>
+
+          <section
+            class="info-step display-flex center-items padding-20 general-border"
+          >
+            <h3 class="info-sub-header">Stock up</h3>
+            <div class="info-content">
+              <p>
+                Once your order arrives, unpack the produce and store it however
+                it works best for you. Hold onto the containers - they are yours
+                to keep until your next order.
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="info-step display-flex center-items padding-20 general-border"
+          >
+            <h3 class="info-sub-header">Scan & reuse</h3>
+            <div class="info-content">
+              <p>
+                Ready for a refill? Grab the containers from your last order and
+                scan the QR code with our app or your phone's camera. This
+                instantly adds the items back to your cart, making reordering a
+                breeze.
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="info-step display-flex center-items padding-20 general-border"
+          >
+            <h3 class="info-sub-header">Swap & reuse</h3>
+            <div class="info-content">
+              <p>
+                When we deliver your new order, simply leave your empty
+                containers outside. We'll pick them up, clean them thoroughly
+                and reuse them for future deliveries.
+              </p>
+            </div>
+          </section>
+        </div>
       </section>
-      <hr />
-      <!-- Go to Chat page -->
-      <section>
-        <h2 class="header" style="text-align: center">Ask us about anything</h2>
-        <p>All your questions answered</p>
-        <img
-          src="./assets/landingPage/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
-          alt=""
-          width="100%"
-          style="object-fit: cover"
-        />
-        <p>
-          New produce is added continously as time goes by and the seasons
-          change.
-        </p>
-        <button>Go to chat</button>
-      </section>
-      <!-- Info sections -->
-      <section>
-        <!-- Info Block -->
-        <section>
-          <h2 class="header" style="text-align: center">
-            This is how it works
-          </h2>
-        </section>
-        <!-- Order Groceries Block -->
-        <section>
-          <h3 class="subHeader" style="text-align: center">Order Groceries</h3>
-          <p>
-            Fram is a circular service that ensures your kitchen is always
-            stocked with the essentials you need. Browse our seasonal selection,
-            choose your items and place your order online.
-          </p>
-          <a href="./pages/products.html">See our stock here</a>
-        </section>
-        <!-- Stock up Block -->
-        <section>
-          <h3 class="subHeader" style="text-align: center">Stock up</h3>
-          <p>
-            Once your order arrives, unpack the produce and store it however it
-            works best for you. Hold onto the containers - they are yours to
-            keep until your next order
-          </p>
-        </section>
-        <!-- Scan and Reorder Block -->
-        <section>
-          <h3 class="subHeader" style="text-align: center">Scan & reuse</h3>
-          <p>
-            Ready for a refill? Grab the containers from your last order and
-            scan the QR code with our app or your phone's camera. This instantly
-            adds the items back to your cart, making reordering a breeze.
-          </p>
-        </section>
-        <!-- Swap and Reuse Block -->
-        <section>
-          <h3 class="subHeader" style="text-align: center">Swap & reuse</h3>
-          <p>
-            When we deliver your new order, simply leave your empty containers
-            outside. We'll pick them up, clean them thoroughly and reuse them
-            for future deliveries.
-          </p>
-        </section>
-      </section>
+
       <!-- Popular Produce Section -->
       <section>
-        <h2 class="header" style="text-align: center">Popular produce</h2>
+        <h2 class="header center-text">Popular produce</h2>
         <!-- Below will come from JS and be like a sidereel, where one can click and add to basket. -->
         <!-- Example -->
         <img
           src="./assets/productPage/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg"
           alt=""
           width="100%"
-          style="object-fit: cover"
+          class="object-fit-cover"
         />
         <button>
           <span> Add to basket </span>
@@ -146,7 +168,7 @@
       <section>
         <h1>FRAM</h1>
         <hr />
-        <h3 class="subHeader" style="text-align: center">Stay Updated</h3>
+        <h3 class="sub-header center-text">Stay Updated</h3>
         <p>
           Sign up for our newsletter to be the first to know about new produce
           or other exciting news!
