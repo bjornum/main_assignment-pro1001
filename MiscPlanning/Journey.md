@@ -32,3 +32,8 @@ More personal report ish for me to look up at later.
 - Adjusted info link, with darkslategray colour.
 - Counting this section of the landing page as completed, and moving on to the next one.
 - Struggling against some default behaviour of css. So moving on for now. The space between header and description was hard. got no time, but noted down.
+- Decided to make things into versions.
+- Version 1: Elements are placed.
+- Version 2: Elements are in position on both Mobile and Desktop. Responsive and most of the styling is done. While the finer touches is left for v3.
+- Completed Top section, Produce and chatbot and Info section.
+- Cleaned up the code and css more.
