@@ -25,3 +25,9 @@ More personal report ish for me to look up at later.
 - Completed Layout of the Produce and Chatbox section
 - Completed Layout of the Info section that i call it.
 - Cleaned all inline styling, and made reusable classes instead
+
+# 05.05.2025
+
+- Fixed info title, now are centered, as it should.
+- Adjusted info link, with darkslategray colour.
+- Counting this section of the landing page as completed, and moving on to the next one.

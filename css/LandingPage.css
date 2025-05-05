@@ -12,12 +12,17 @@
 }
 
 /* ===== Info Section (This is how it works section) ===== */
-.info-section {
-  flex-direction: column;
-}
 
 .info-title {
-  padding: 40px 20px;
+  justify-content: center;
+}
+
+.info-link {
+  color: darkslategray;
+}
+
+.info-section {
+  flex-direction: column;
 }
 
 .info-steps {
@@ -64,7 +69,6 @@
   .info-title {
     flex: 1;
     max-width: 33%;
-    justify-content: center;
     height: 100%;
   }
 
@@ -84,6 +88,7 @@
     padding-left: 90px;
     padding-right: 20px;
     position: relative;
+    display: flex;
   }
 
   .info-header {
