@@ -31,3 +31,4 @@ More personal report ish for me to look up at later.
 - Fixed info title, now are centered, as it should.
 - Adjusted info link, with darkslategray colour.
 - Counting this section of the landing page as completed, and moving on to the next one.
+- Struggling against some default behaviour of css. So moving on for now. The space between header and description was hard. got no time, but noted down.

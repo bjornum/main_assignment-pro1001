@@ -1,5 +1,45 @@
 /* All css that are specified to the landing page */
 
+/* ===== Top Section - Image with text ===== */
+.top-background-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.top-logo {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 3em;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.top-underline {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 200px;
+  background-color: white;
+}
+
+.top-subheading {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2em;
+  margin: 0;
+}
+
 /* ===== Produce and Chatbot Section ===== */
 .produce-chat-container {
   flex-direction: column;
@@ -8,7 +48,21 @@
 
 .produce-chat-image {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 46px;
+  height: 327px;
+  padding: 0px 16px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border-radius: 30px;
+}
+
+.produce-full-width-button {
+  height: 45px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  display: block;
+  padding: 0 20px;
 }
 
 /* ===== Info Section (This is how it works section) ===== */
@@ -58,6 +112,10 @@
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .produce-full-width-button {
+    width: 320px;
   }
 
   /* ===== Info Section ===== */

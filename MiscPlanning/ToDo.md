@@ -23,3 +23,26 @@ Exact steps i need to do, to finalise this project.
 - Sidebar Menu
 - Navbar
 - Footer
+
+# Fix Global Components
+
+- [ ] Navbar with its Sidebar.
+- [ ] Newsletter
+- [ ] Shopping cart bell on navbar - an Bonus for the end.
+
+# Landing Page v2 - Be done by 5th and 6th.
+
+- [ ] Fix the Top Section. (Image and text)
+- [ ] Fix Produce and Chat section
+- [x] Fix Info Section
+- [ ] Fix Produce Popular Produce Section
+- [ ] Fix an Newsletter (will be used on other page aswell.)
+
+# Produce Page v2
+
+- [ ] Fix Top Section (Just easy text.)
+- [ ] Fix display of the Produce images. (Use js)
+- [ ] Fix See our Partnering Farms section and the google map one.
+- [ ] Use the same newsletter made in the Landing Page
+
+# Chatbot v2 - Getting to this once rest is completed (more technical page)

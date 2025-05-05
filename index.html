@@ -17,36 +17,59 @@
     <nav></nav>
     <!-- Main -->
     <main>
-      <!-- Large Image -->
-      <section>
-        <img
-          src="./assets/landingPage/markus-spiske-WcLzVLbUP5g-unsplash.jpg"
-          alt=""
-          width="100%"
-          class="object-fit-cover"
-        />
+      <!-- Large Image - Background -->
+      <section
+        class="top-background-section"
+        style="
+          background-image: url('./assets/landingPage/markus-spiske-WcLzVLbUP5g-unsplash.jpg');
+        "
+      >
+        <!-- Logo -->
+        <h1 class="top-logo">FRAM</h1>
+
+        <!-- White underline going downward -->
+        <div class="top-underline"></div>
+
+        <!-- Subheading Text -->
+        <p class="top-subheading">Home delivery from your local farms</p>
       </section>
-      <div class="produce-chat-container display-flex">
+
+      <!-- Produce Section -->
+      <section class="produce-chat-container display-flex">
         <!-- Produce Section -->
         <section class="produce-chat-card center-items center-text">
-          <h2 class="header">Shop our seasonal selection</h2>
-          <p>Updated every week</p>
+          <h2 class="header no-margin" style="padding-top: 90px">
+            Shop our seasonal selection
+          </h2>
+          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
+            Updated every week
+          </p>
           <img
             src="./assets/landingPage/nina-luong-dp06f70Eyvc-unsplash.jpg"
             alt="Produce"
             class="produce-chat-image"
           />
+
           <p>
             New produce is added continuously as time goes by and the seasons
             change.
           </p>
-          <button>Browse our selection</button>
+          <button class="produce-full-width-button" style="margin-top: 45px">
+            Browse our selection
+          </button>
         </section>
 
         <!-- Go to Chat page -->
-        <section class="produce-chat-card center-items center-text padding-20">
-          <h2 class="header">Ask us about anything</h2>
-          <p>All your questions answered</p>
+        <section
+          class="produce-chat-card center-items center-text"
+          style="margin-bottom: 90px"
+        >
+          <h2 class="header no-margin" style="padding-top: 90px">
+            Ask us about anything
+          </h2>
+          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
+            All your questions answered
+          </p>
           <img
             src="./assets/landingPage/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg"
             alt="Chat"
@@ -56,9 +79,11 @@
             New produce is added continuously as time goes by and the seasons
             change.
           </p>
-          <button>Go to chat</button>
+          <button class="produce-full-width-button" style="margin-top: 45px">
+            Go to chat
+          </button>
         </section>
-      </div>
+      </section>
 
       <!-- Info Sections  -->
       <section class="info-section primary-background-color display-flex">
