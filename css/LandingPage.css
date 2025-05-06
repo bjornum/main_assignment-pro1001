@@ -253,17 +253,51 @@
   }
 
   /* ===== Popular Produce Section ===== */
+  /* To remove extra padding and margin*/
+  section {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Hide buttons on desktop */
+  .popular-produce-navigation-button-container {
+    display: none;
+  }
+
   .popular-produce-card-container {
-    justify-content: space-between;
-    overflow: visible;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .popular-produce-card {
-    flex: 1 1 auto; /* Cards share space equally */
-    max-width: 300px; /* Adjust card size for desktop */
+    padding: 0;
+    min-width: 455px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
-  .popular-produce-navigation-button-container {
-    display: none; /* Hide buttons on desktop */
+  .popular-produce-card img {
+    width: 455px;
+    height: 432px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .popular-produce-type-and-price {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .popular-produce-weight {
+    margin-top: 12px;
+    text-align: left;
+    font-size: 0.9rem;
   }
 }
