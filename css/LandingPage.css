@@ -1,4 +1,4 @@
-/* All css that are specified to the landing page */
+/* ===== All CSS Specified for the Landing Page ===== */
 
 /* ===== Top Section - Image with text ===== */
 .top-background-section {
@@ -49,12 +49,11 @@
 .produce-chat-image {
   width: 100%;
   object-fit: cover;
-  border-radius: 46px;
+  border-radius: 30px;
   height: 327px;
   padding: 0px 16px;
   margin-top: 45px;
   margin-bottom: 45px;
-  border-radius: 30px;
 }
 
 .produce-full-width-button {
@@ -66,7 +65,6 @@
 }
 
 /* ===== Info Section (This is how it works section) ===== */
-
 .info-title {
   justify-content: center;
 }
@@ -88,14 +86,101 @@
   padding-bottom: 45px;
 }
 
-/* Kept as needing to adjust this between screen sizes */
 .info-sub-header {
   text-align: center;
 }
 
-/* Desktop Styles: When the screen is 1024px or larger */
+/* ===== Popular Produce Section ===== */
+.popular-produce-shopping-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 60%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin: -30px 10px 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.popular-produce-shopping-button-icon {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.popular-produce-card-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.popular-produce-card {
+  flex: 0 0 calc(100% - 32px);
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.popular-produce-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.popular-produce-type-and-price {
+  margin-top: 18px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.popular-produce-weight {
+  margin-top: 5px;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-left: 0;
+}
+
+.popular-produce-navigation-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Scroll button styles */
+#scroll-left,
+#scroll-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* ===== Desktop Styles: When the screen is 1024px or larger ===== */
 @media (min-width: 1024px) {
-  /* ===== Produce and Chat Section Layout ===== */
+  /* ===== Produce and Chat Section ===== */
   .produce-chat-container {
     flex-direction: row;
   }
@@ -165,5 +250,20 @@
   .info-content {
     flex: 1;
     padding-right: 197px;
+  }
+
+  /* ===== Popular Produce Section ===== */
+  .popular-produce-card-container {
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .popular-produce-card {
+    flex: 1 1 auto; /* Cards share space equally */
+    max-width: 300px; /* Adjust card size for desktop */
+  }
+
+  .popular-produce-navigation-button-container {
+    display: none; /* Hide buttons on desktop */
   }
 }

@@ -75,6 +75,10 @@ body {
   display: flex;
 }
 
+.add-cursor-pointer {
+  cursor: pointer;
+}
+
 .padding-20 {
   padding: 20px;
 }
