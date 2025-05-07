@@ -37,3 +37,16 @@ More personal report ish for me to look up at later.
 - Version 2: Elements are in position on both Mobile and Desktop. Responsive and most of the styling is done. While the finer touches is left for v3.
 - Completed Top section, Produce and chatbot and Info section.
 - Cleaned up the code and css more.
+
+# 06.05.2025
+
+- Worked on the carousel feature of the landing page popular produce. It works quite well on mobile.
+- Landing page is getting there, but need some styling and visual touch for sure. But features first!
+
+# 07.05.2025
+
+- Implemented the Map on the produce page.
+  Was some dificulties implementing the google one, due to it require an billed account. So went for an free but good one instead named leaflet.
+- Was able to find the same farm as mentioned in the task, and pin it down!
+- Positioning is done for both mobile and desktop.
+- Styling needed

@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produce</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/producePage.css" />
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
   </head>
-  <body>
+  <body class="primary-background-color">
     <!-- Nav -->
     <nav></nav>
     <!-- Main content -->
@@ -35,14 +43,27 @@
         </h3>
         <p>1 kg</p>
       </section>
-      <!-- Intro section to partner maps -->
-      <section>
-        <h2>See our partnering farms</h2>
+      <!-- Wrapper for text and map -->
+      <section class="partnering-farms-wrapper">
+        <!-- Intro section to partner maps -->
+        <section class="partnering-farms-text">
+          <h2>See our partnering farms</h2>
+        </section>
+
+        <!-- Farmers Map -->
+        <section class="partnering-farms-map">
+          <div id="map"></div>
+        </section>
       </section>
-      <!-- Google Map -->
-      <section></section>
       <!-- Newsletter section -->
       <section></section>
     </main>
+
+    <!-- Leaflet JavaScript -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="../js/farmer-map.js"></script>
   </body>
 </html>
