@@ -50,3 +50,8 @@ More personal report ish for me to look up at later.
 - Was able to find the same farm as mentioned in the task, and pin it down!
 - Positioning is done for both mobile and desktop.
 - Styling needed
+
+# 08.05.2025
+
+- Produce Map section completed. It is good enough
+- Produce section above now is ok on mobile and desktop.
