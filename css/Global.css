@@ -95,6 +95,14 @@ body {
   margin: 0 !important;
 }
 
+.on-desktop-only {
+  display: none;
+}
+
+.on-mobile-only {
+  display: block;
+}
+
 /* Specific Elements */
 
 /* Logo */
@@ -152,5 +160,13 @@ body {
   /* Accent Text */
   .accent-text {
     font-size: 20px;
+  }
+
+  .on-desktop-only {
+    display: block;
+  }
+
+  .on-mobile-only {
+    display: none;
   }
 }

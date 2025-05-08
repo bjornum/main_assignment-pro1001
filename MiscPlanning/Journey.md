@@ -55,3 +55,9 @@ More personal report ish for me to look up at later.
 
 - Produce Map section completed. It is good enough
 - Produce section above now is ok on mobile and desktop.
+- Intro Produce Section at the top completed
+- Navbar Completed
+- Sidebar Completed
+- Newsletter Completed
+- CSS Cleaned up some
+- V2 is getting closer to completion.
