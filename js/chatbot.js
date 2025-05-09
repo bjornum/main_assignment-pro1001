@@ -25,38 +25,58 @@ button.addEventListener("click", async () => {
 });
 
 const addMessage = (sender, message) => {
-  const div = document.createElement("div");
-  div.textContent = message;
+  const messageWrapper = document.createElement("div");
+  messageWrapper.style.display = "flex";
+  messageWrapper.style.marginBottom = "10px";
+
+  if (sender === "user") {
+    messageWrapper.style.justifyContent = "flex-end";
+  } else if (sender === "bot") {
+    messageWrapper.style.justifyContent = "flex-start";
+  }
+
+  if (sender === "bot") {
+    const label = document.createElement("div");
+    label.textContent = "FRAM";
+    label.style.fontWeight = "bold";
+    label.style.marginRight = "8px";
+    label.style.color = "#333";
+    messageWrapper.appendChild(label);
+  }
+
+  const messageDiv = document.createElement("div");
+  messageDiv.textContent = message;
 
   // Apply inline styles based on sender
   if (sender === "user") {
-    div.style.alignSelf = "flex-end";
-    div.style.backgroundColor = "#d1e7ff";
-    div.style.color = "#000";
+    messageDiv.style.backgroundColor = "#d1e7ff";
+    messageDiv.style.color = "#000";
+    messageDiv.style.marginRight = "10px";
   } else if (sender === "bot") {
-    div.style.alignSelf = "flex-start";
-    div.style.backgroundColor = "#f8f9fa";
-    div.style.color = "#333";
+    messageDiv.style.backgroundColor = "#f8f9fa";
+    messageDiv.style.color = "#333";
   }
 
-  div.style.padding = "10px";
-  div.style.borderRadius = "10px";
-  div.style.maxWidth = "70%";
-  div.style.wordWrap = "break-word";
-  div.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
-  messagesContainer.appendChild(div);
+  messageDiv.style.padding = "10px";
+  messageDiv.style.borderRadius = "10px";
+  messageDiv.style.maxWidth = "90%";
+  messageDiv.style.wordWrap = "break-word";
+  messageDiv.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
+
+  messageWrapper.appendChild(messageDiv);
+  messagesContainer.appendChild(messageWrapper);
 
   // Scroll to the bottom after adding a new message
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
 };
 
 const showTypingIndicator = () => {
-  typingIndicator.style.display = "flex"; // Show the typing indicator
-  messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll to the bottom
+  typingIndicator.style.display = "flex";
+  messagesContainer.scrollTop = messagesContainer.scrollHeight;
 };
 
 const hideTypingIndicator = () => {
-  typingIndicator.style.display = "none"; // Hide the typing indicator
+  typingIndicator.style.display = "none";
 };
 
 const getOpenAIResponse = async (userInput) => {

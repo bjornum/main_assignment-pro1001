@@ -75,3 +75,4 @@ More personal report ish for me to look up at later.
 - Chatbot: Loader now fixed. Went with it in its own block due to some issues regarding text positioning.
 - Chatbot: Now defined as an assistant specialized in norway, giving answers angled more toward this exam assignment.
 - Navbar: Adjusted the shopping card button.
+- Chatbot: User text comes on right side, and AI text on left.
