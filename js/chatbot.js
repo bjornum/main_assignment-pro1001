@@ -1,4 +1,5 @@
 const apiKey = ""; // API KEY GOES HERE - will be adjusted on netlify through its environment variables
+
 const messagesContainer = document.getElementById("messages");
 const input = document.getElementById("userInput");
 const button = document.getElementById("sendBtn");

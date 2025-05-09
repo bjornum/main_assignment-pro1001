@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #f8f8f8;
+  background-color: #f7f2de;
   border-bottom: 1px solid #ddd;
   padding: 10px 20px;
   display: flex;
@@ -28,8 +28,7 @@
 
 .hamburger-menu-button,
 .green-button {
-  background-color: #4caf50;
-  color: white;
+  background-color: #f7f2de;
   border: none;
   border-radius: 4px;
   padding: 8px 12px;

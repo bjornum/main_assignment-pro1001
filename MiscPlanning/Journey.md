@@ -61,3 +61,12 @@ More personal report ish for me to look up at later.
 - Newsletter Completed
 - CSS Cleaned up some
 - V2 is getting closer to completion.
+
+# 09.05.2025
+
+- Logged in and bought tokens from OpenAI
+- Chatbot: Created the visuals for HTML and CSS + Basic function for Javascript.
+- Chatbot: Connected API key, and tested the Bot. It works!!
+- Chatbot Note: Will hide it in .env, and make sure it never get pushed live!
+- Navbar: Hamburger icon added (used heroicons svg)
+- Navbar: Adjusted style, so it is more in line with the design.

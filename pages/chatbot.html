@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla AI Chatbot</title>
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../css/Navbar.css" />
+    <link rel="stylesheet" href="../css/chatbot.css" />
+  </head>
+  <body class="chatbot-body">
+    <!-- Navbar -->
+    <header class="header">
+      <div class="header-left">
+        <button class="hamburger-menu-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="black"
+            style="width: 24px; height: 24px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <h1 class="header-title">FRAM</h1>
+      </div>
+      <div class="header-right">
+        <button class="green-button">Basket</button>
+      </div>
+    </header>
+    <!-- Side Menu -->
+    <div id="side-menu" class="side-menu">
+      <button class="close-menu-button">&times;</button>
+      <div class="menu-content">
+        <ul class="menu-items large-body" style="padding-top: 30%">
+          <li>
+            <a href="#produce">Produce</a>
+          </li>
+          <li><a href="#farms">Partnering Farms</a></li>
+        </ul>
+        <div class="menu-footer">
+          <a href="#newsletter">Newsletter</a>
+        </div>
+      </div>
+    </div>
+    <div id="chatbox-container" class="chatbot-messages-container">
+      <div id="messages" class="chatbot-messages">
+        <!-- Chat messages will go here -->
+      </div>
+      <div id="input-area" class="chatbot-input-area">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type a message..."
+          class="chatbot-input"
+        />
+        <button id="sendBtn" class="chatbot-send-button">Send</button>
+      </div>
+    </div>
+    <script src="../js/chatbot.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>

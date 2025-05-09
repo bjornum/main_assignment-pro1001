@@ -1,7 +1,7 @@
 .chatbot-body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url("../images/background.jpg");
+  background-image: url("../assets/landingPage/markus-spiske-WcLzVLbUP5g-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -35,9 +35,8 @@
 }
 
 .chatbot-messages-container {
-  width: 90%;
-  max-width: 400px;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,4 +54,19 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
+}
+
+/* Desktop Styles: When the screen is 1024px or larger */
+@media (min-width: 1024px) {
+  .chatbot-messages-container {
+    width: 90%;
+    max-width: 400px;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
