@@ -24,8 +24,7 @@ button.addEventListener("click", async () => {
   addMessage("bot", botReply);
 });
 
-function addMessage(sender, message) {
-  // s;
+const addMessage = (sender, message) => {
   const div = document.createElement("div");
   div.textContent = message;
 
@@ -49,20 +48,18 @@ function addMessage(sender, message) {
 
   // Scroll to the bottom after adding a new message
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
-}
+};
 
-function showTypingIndicator() {
-  const typingIndicator = document.getElementById("typing-indicator");
+const showTypingIndicator = () => {
   typingIndicator.style.display = "flex"; // Show the typing indicator
   messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll to the bottom
-}
+};
 
-function hideTypingIndicator() {
-  const typingIndicator = document.getElementById("typing-indicator");
+const hideTypingIndicator = () => {
   typingIndicator.style.display = "none"; // Hide the typing indicator
-}
+};
 
-async function getOpenAIResponse(userInput) {
+const getOpenAIResponse = async (userInput) => {
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -88,4 +85,4 @@ async function getOpenAIResponse(userInput) {
 
   const data = await response.json();
   return data.choices[0].message.content.trim();
-}
+};

@@ -36,10 +36,10 @@
 
 .hamburger-menu-button,
 .green-button {
-  background-color: #f7f2de;
+  background-color: #008f51;
   border: none;
-  border-radius: 4px;
-  padding: 8px 12px;
+  border-radius: 20px;
+  padding: 12px 20px;
   cursor: pointer;
 }
 

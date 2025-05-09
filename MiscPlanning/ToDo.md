@@ -50,3 +50,8 @@ Exact steps i need to do, to finalise this project.
 - the tripple dot when its typing.
 - Button also turns into an X when it happens.
 - The error messages displayed.
+
+# Shopping Cart and Page
+
+- Need to add Localstorage feature
+- Need to update the number, based on the localstore data
