@@ -71,7 +71,14 @@ async function getOpenAIResponse(userInput) {
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: userInput }],
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are an assistant specialized in providing information and support for farms in Norway. Answer questions with this context in mind.",
+        },
+        { role: "user", content: userInput },
+      ],
     }),
   });
 

@@ -73,3 +73,4 @@ More personal report ish for me to look up at later.
 - Navbar: Fixed routing to the other pages.
 - Checkout Page: Created page. Guess this one is an extra twist thrown into the mix.
 - Chatbot: Loader now fixed. Went with it in its own block due to some issues regarding text positioning.
+- Chatbot: Now defined as an assistant specialized in norway, giving answers angled more toward this exam assignment.
