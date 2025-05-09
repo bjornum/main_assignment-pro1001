@@ -70,3 +70,4 @@ More personal report ish for me to look up at later.
 - Chatbot Note: Will hide it in .env, and make sure it never get pushed live!
 - Navbar: Hamburger icon added (used heroicons svg)
 - Navbar: Adjusted style, so it is more in line with the design.
+- Navbar: Fixed routing to the other pages.
