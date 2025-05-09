@@ -71,3 +71,5 @@ More personal report ish for me to look up at later.
 - Navbar: Hamburger icon added (used heroicons svg)
 - Navbar: Adjusted style, so it is more in line with the design.
 - Navbar: Fixed routing to the other pages.
+- Checkout Page: Created page. Guess this one is an extra twist thrown into the mix.
+- Chatbot: Loader now fixed. Went with it in its own block due to some issues regarding text positioning.

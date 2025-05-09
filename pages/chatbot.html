@@ -56,17 +56,49 @@
       </div>
     </div>
     <div id="chatbox-container" class="chatbot-messages-container">
-      <div id="messages" class="chatbot-messages">
-        <!-- Chat messages will go here -->
+      <!-- Messages will happen inside here :) -->
+      <div id="messages" class="chatbot-messages"></div>
+      <!-- Loader when asking The AI -->
+      <div id="typing-indicator" class="typing-indicator typing-loader">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="black"
+          style="width: 24px; height: 24px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+          />
+        </svg>
       </div>
+      <!-- Writing the messages to the AI here -->
       <div id="input-area" class="chatbot-input-area">
-        <input
-          type="text"
+        <textarea
           id="userInput"
           placeholder="Type a message..."
           class="chatbot-input"
-        />
-        <button id="sendBtn" class="chatbot-send-button">Send</button>
+          rows="2"
+        ></textarea>
+        <button id="sendBtn" class="chatbot-send-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            style="width: 16px; height: 16px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+            />
+          </svg>
+        </button>
       </div>
     </div>
     <script src="../js/chatbot.js"></script>

@@ -46,3 +46,7 @@ Exact steps i need to do, to finalise this project.
 - [ ] Use the same newsletter made in the Landing Page
 
 # Chatbot v2 - Getting to this once rest is completed (more technical page)
+
+- the tripple dot when its typing.
+- Button also turns into an X when it happens.
+- The error messages displayed.

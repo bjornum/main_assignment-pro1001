@@ -1,6 +1,7 @@
 const apiKey = ""; // API KEY GOES HERE - will be adjusted on netlify through its environment variables
 
 const messagesContainer = document.getElementById("messages");
+const typingIndicator = document.getElementById("typing-indicator");
 const input = document.getElementById("userInput");
 const button = document.getElementById("sendBtn");
 
@@ -11,12 +12,20 @@ button.addEventListener("click", async () => {
   addMessage("user", userMessage);
   input.value = "";
 
+  // Show typing indicator
+  showTypingIndicator();
+
+  // Waiting for the AI response
   const botReply = await getOpenAIResponse(userMessage);
+
+  // Remove typing indicator
+  hideTypingIndicator();
+
   addMessage("bot", botReply);
 });
 
 function addMessage(sender, message) {
-  s;
+  // s;
   const div = document.createElement("div");
   div.textContent = message;
 
@@ -40,6 +49,17 @@ function addMessage(sender, message) {
 
   // Scroll to the bottom after adding a new message
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
+}
+
+function showTypingIndicator() {
+  const typingIndicator = document.getElementById("typing-indicator");
+  typingIndicator.style.display = "flex"; // Show the typing indicator
+  messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll to the bottom
+}
+
+function hideTypingIndicator() {
+  const typingIndicator = document.getElementById("typing-indicator");
+  typingIndicator.style.display = "none"; // Hide the typing indicator
 }
 
 async function getOpenAIResponse(userInput) {

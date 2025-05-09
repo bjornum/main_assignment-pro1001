@@ -20,17 +20,19 @@
   flex: 1;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
+  background-color: #e1eaf0;
+  resize: none;
 }
 
 .chatbot-send-button {
   margin-left: 10px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: #ff4d4d;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -54,6 +56,38 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
+  position: relative; /* Ensure child elements like the typing indicator are positioned correctly */
+}
+
+/* Hide the Loader */
+.typing-loader {
+  display: none;
+}
+
+.typing-indicator {
+  font-style: italic;
+  opacity: 0.8;
+  animation: blink 1.5s infinite;
+  align-self: flex-start;
+  background-color: #f7f2de;
+  border: 2px solid black;
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }
 
 /* Desktop Styles: When the screen is 1024px or larger */
