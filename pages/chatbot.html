@@ -42,7 +42,7 @@
     <div id="side-menu" class="side-menu">
       <button class="close-menu-button">&times;</button>
       <div class="menu-content">
-        <ul class="menu-items large-body" style="padding-top: 30%">
+        <ul class="menu-items large-body">
           <li>
             <a href="/pages/produce.html">Products</a>
           </li>
@@ -66,7 +66,7 @@
           viewBox="0 0 24 24"
           stroke-width="2"
           stroke="black"
-          style="width: 24px; height: 24px"
+          class="typing-indicator-icon"
         >
           <path
             stroke-linecap="round"
@@ -75,18 +75,8 @@
           />
         </svg>
       </div>
-      <div
-        id="error-message"
-        class="default-hidden"
-        style="
-          border: 1px red solid;
-          margin: 0px 10px 0px 10px;
-          text-align: center;
-          padding: 10px;
-          color: red;
-        "
-      >
-        <p id="error-text" style="margin: 0px">
+      <div id="error-message" class="default-hidden error-message-container">
+        <p id="error-text" class="no-margin">
           Failed to connect. Wait and try again later
         </p>
       </div>
@@ -105,7 +95,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            style="width: 16px; height: 16px"
+            class="chatbot-send-button-icon"
           >
             <path
               stroke-linecap="round"
