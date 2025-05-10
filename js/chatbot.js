@@ -63,7 +63,7 @@ const addMessage = (sender, message) => {
   messageDiv.style.padding = "10px";
   messageDiv.style.borderRadius = "10px";
   messageDiv.style.maxWidth = "90%";
-  messageDiv.style.wordWrap = "break-word";
+  messageDiv.style.overflowWrap = "break-word";
   messageDiv.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.1)";
 
   messageWrapper.appendChild(messageDiv);
