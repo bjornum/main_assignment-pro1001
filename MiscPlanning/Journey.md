@@ -83,3 +83,8 @@ More personal report ish for me to look up at later.
 - Chatbot: Now displays error messages based upon the various error codes.
 - Cleaning out all the inline styling, and making it to classes.
 - Cleaning up the css classes
+- Chatbot: After ALOT of frustration it behaves.
+  -- Messages start at the bottom.
+  -- Scroll actually works now!
+  -- Newer message populates at the bottom.
+  -- Cleanup in code completed
