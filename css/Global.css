@@ -12,6 +12,13 @@ body {
   padding: 0px;
 }
 
+/* Ensures full-height layout and removes browser default spacing. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 /* Large Body text */
 .large-body {
   font-size: 18px;

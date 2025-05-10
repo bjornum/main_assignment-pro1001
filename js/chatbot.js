@@ -8,11 +8,42 @@ const button = document.getElementById("sendBtn");
 const errorMessage = document.getElementById("error-message");
 const errorText = document.getElementById("error-text");
 
-button.addEventListener("click", async () => {
+// By pressing the Enter key
+document.getElementById("chat-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
   const userMessage = input.value.trim();
   if (!userMessage) return;
 
   addMessage("user", userMessage);
+  input.value = "";
+
+  showTypingIndicator();
+  const botReply = await getOpenAIResponse(userMessage);
+  hideTypingIndicator();
+
+  addMessage("bot", botReply);
+});
+
+// By pressing the Enter key with Shift, user can add a new line
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    button.click();
+  }
+});
+
+// By pressing the button
+button.addEventListener("click", async () => {
+  // Prevent the default form submission behavior
+  const userMessage = input.value.trim();
+
+  // Check if the input is empty
+  if (!userMessage) return;
+
+  // Add the user's message to the chat
+  addMessage("user", userMessage);
+
+  // Clear the input field
   input.value = "";
 
   // Show typing indicator
@@ -24,9 +55,11 @@ button.addEventListener("click", async () => {
   // Remove typing indicator
   hideTypingIndicator();
 
+  // Add the bot's reply to the chat
   addMessage("bot", botReply);
 });
 
+// Function to add a message to the chat
 const addMessage = (sender, message) => {
   const messageWrapper = document.createElement("div");
   messageWrapper.style.display = "flex";
@@ -44,6 +77,8 @@ const addMessage = (sender, message) => {
     label.style.fontWeight = "bold";
     label.style.marginRight = "8px";
     label.style.color = "#333";
+    label.style.display = "flex";
+    label.style.alignItems = "center";
     messageWrapper.appendChild(label);
   }
 
@@ -52,11 +87,11 @@ const addMessage = (sender, message) => {
 
   // Apply inline styles based on sender
   if (sender === "user") {
-    messageDiv.style.backgroundColor = "#d1e7ff";
+    messageDiv.style.backgroundColor = "#e1eaf0";
     messageDiv.style.color = "#000";
     messageDiv.style.marginRight = "10px";
   } else if (sender === "bot") {
-    messageDiv.style.backgroundColor = "#f8f9fa";
+    messageDiv.style.backgroundColor = "#f7f2de";
     messageDiv.style.color = "#333";
   }
 
@@ -69,19 +104,22 @@ const addMessage = (sender, message) => {
   messageWrapper.appendChild(messageDiv);
   messagesContainer.appendChild(messageWrapper);
 
-  // Scroll to the bottom after adding a new message
+  // Force layout recalculation and scroll to the bottom
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
 };
 
+// Shows the typing indicator
 const showTypingIndicator = () => {
   typingIndicator.style.display = "flex";
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
 };
 
+// Hides the typing indicator
 const hideTypingIndicator = () => {
   typingIndicator.style.display = "none";
 };
 
+// Running a fetch request to OpenAI API - Specified behaviour toward the exam task
 const getOpenAIResponse = async (userInput) => {
   try {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -141,7 +179,9 @@ const getOpenAIResponse = async (userInput) => {
     // Hide the error message if the request succeeds
     errorMessage.style.display = "none";
 
+    // Get the Response from the API
     const data = await response.json();
+
     return data.choices[0].message.content.trim();
   } catch (error) {
     // Show the error message and update the text for network or other errors

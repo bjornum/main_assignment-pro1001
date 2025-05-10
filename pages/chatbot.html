@@ -12,7 +12,7 @@
     <!-- Navbar -->
     <header class="header">
       <div class="header-left">
-        <button class="hamburger-menu-button">
+        <button class="hamburger-menu-button" aria-label="Open side menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -40,7 +40,9 @@
     </header>
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-      <button class="close-menu-button">&times;</button>
+      <button class="close-menu-button" aria-label="Close side menu">
+        &times;
+      </button>
       <nav class="menu-content">
         <ul class="menu-items large-body">
           <li><a href="/pages/produce.html">Products</a></li>
@@ -51,11 +53,16 @@
         </div>
       </nav>
     </div>
-    <div id="chatbox-container" class="chatbot-messages-container">
+    <main id="chatbox-container" class="chatbot-messages-container">
       <!-- Messages will happen inside here :) -->
-      <div id="messages" class="chatbot-messages"></div>
+      <section id="messages" class="chatbot-messages"></section>
       <!-- Loader when asking The AI -->
-      <div id="typing-indicator" class="typing-indicator default-hidden">
+      <div
+        role="status"
+        aria-live="polite"
+        id="typing-indicator"
+        class="typing-indicator default-hidden"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -71,20 +78,35 @@
           />
         </svg>
       </div>
-      <div id="error-message" class="default-hidden error-message-container">
+      <div
+        role="alert"
+        id="error-message"
+        class="default-hidden error-message-container"
+      >
         <p id="error-text" class="no-margin">
           Failed to connect. Wait and try again later
         </p>
       </div>
       <!-- Writing the messages to the AI here -->
-      <div id="input-area" class="chatbot-input-area">
+      <form
+        id="chat-form"
+        class="chatbot-input-area"
+        aria-label="Chat input area"
+      >
+        <label for="userInput" class="visually-hidden">Your message</label>
         <textarea
           id="userInput"
+          name="userMessage"
           placeholder="Type a message..."
           class="chatbot-input"
           rows="2"
         ></textarea>
-        <button id="sendBtn" class="chatbot-send-button">
+        <button
+          id="sendBtn"
+          type="submit"
+          class="chatbot-send-button"
+          aria-label="Send message"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -100,8 +122,14 @@
             />
           </svg>
         </button>
-      </div>
-    </div>
+      </form>
+      <section style="padding: 10px">
+        <small class="chatbot-input-instructions">
+          <strong>Note:</strong> Pressing enter will submit the message, and
+          shift + enter will go to next line
+        </small>
+      </section>
+    </main>
     <script src="../js/chatbot.js"></script>
     <script src="../js/navbar.js"></script>
   </body>
