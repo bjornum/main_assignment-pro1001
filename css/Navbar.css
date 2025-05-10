@@ -34,7 +34,6 @@
   transition: color 0.3s ease;
 }
 
-.hamburger-menu-button,
 .green-button {
   background-color: #008f51;
   border: none;
@@ -43,12 +42,10 @@
   cursor: pointer;
 }
 
-.hamburger-menu-icon {
-  width: 20px;
-  height: 2px;
-  background-color: white;
-  display: block;
-  margin: 4px 0;
+.hamburger-menu-button {
+  border: none;
+  cursor: pointer;
+  background-color: #f7f2de;
 }
 
 /* Side Menu Styles */
