@@ -5,6 +5,9 @@ const typingIndicator = document.getElementById("typing-indicator");
 const input = document.getElementById("userInput");
 const button = document.getElementById("sendBtn");
 
+const errorMessage = document.getElementById("error-message");
+const errorText = document.getElementById("error-text");
+
 button.addEventListener("click", async () => {
   const userMessage = input.value.trim();
   if (!userMessage) return;
@@ -80,29 +83,70 @@ const hideTypingIndicator = () => {
 };
 
 const getOpenAIResponse = async (userInput) => {
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: "gpt-3.5-turbo",
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are an assistant specialized in providing information and support for farms in Norway. Answer questions with this context in mind.",
-        },
-        { role: "user", content: userInput },
-      ],
-    }),
-  });
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [
+          {
+            role: "system",
+            content:
+              "You are an assistant specialized in providing information and support for farms in Norway. Answer questions with this context in mind.",
+          },
+          { role: "user", content: userInput },
+        ],
+      }),
+    });
 
-  if (!response.ok) {
-    return "⚠️ Error with OpenAI request.";
+    // Various graceful error handling for different response statuses
+    if (!response.ok) {
+      switch (response.status) {
+        case 400:
+          errorText.textContent =
+            "Error: Bad Request. Please check your input.";
+          break;
+        case 401:
+          errorText.textContent =
+            "Error: Unauthorized. Please check your API key.";
+          break;
+        case 403:
+          errorText.textContent =
+            "Error: Forbidden. You don't have access to this resource.";
+          break;
+        case 404:
+          errorText.textContent =
+            "Error: Not Found. The endpoint does not exist.";
+          break;
+        case 429:
+          errorText.textContent = "Error: Too Many Requests. Please slow down.";
+          break;
+        case 500:
+          errorText.textContent =
+            "Error: Internal Server Error. Please try again later.";
+          break;
+        default:
+          errorText.textContent = `Error: ${response.status} - ${
+            response.statusText || "Unknown error"
+          }`;
+      }
+      errorMessage.style.display = "block";
+      return;
+    }
+
+    // Hide the error message if the request succeeds
+    errorMessage.style.display = "none";
+
+    const data = await response.json();
+    return data.choices[0].message.content.trim();
+  } catch (error) {
+    // Show the error message and update the text for network or other errors
+    errorText.textContent = `Error: ${error.message}`;
+    errorMessage.style.display = "block";
+    return;
   }
-
-  const data = await response.json();
-  return data.choices[0].message.content.trim();
 };

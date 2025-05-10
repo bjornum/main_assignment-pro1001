@@ -48,6 +48,12 @@
   background-color: #f7f2de;
 }
 
+/* Size of the Hamburger Menu Icon */
+.hamburger-menu-icon {
+  width: 36px;
+  height: 36px;
+}
+
 /* Side Menu Styles */
 .side-menu {
   position: fixed;

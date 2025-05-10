@@ -95,10 +95,17 @@ body {
   margin: 0 !important;
 }
 
+/* Used on elements that are to be hidden by default */
+.default-hidden {
+  display: none;
+}
+
+/* Show on Desktop Only */
 .on-desktop-only {
   display: none;
 }
 
+/* Show on Mobile Only */
 .on-mobile-only {
   display: block;
 }

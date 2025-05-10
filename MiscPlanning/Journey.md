@@ -76,3 +76,10 @@ More personal report ish for me to look up at later.
 - Chatbot: Now defined as an assistant specialized in norway, giving answers angled more toward this exam assignment.
 - Navbar: Adjusted the shopping card button.
 - Chatbot: User text comes on right side, and AI text on left.
+
+# 10.05.2025
+
+- Navbar: Hamburger menu cleanup - Now correct colour and css class.
+- Chatbot: Now displays error messages based upon the various error codes.
+- Cleaning out all the inline styling, and making it to classes.
+- Cleaning up the css classes
