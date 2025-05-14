@@ -35,7 +35,7 @@
         </a>
       </div>
       <div class="header-right">
-        <button class="green-button">92</button>
+        <button class="green-button" id="cart-count"></button>
       </div>
     </header>
     <!-- Side Menu -->
@@ -67,7 +67,7 @@
         <!--Card 1-->
         <div class="produce-card">
           <img src="../assets/productPage/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button">
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -92,7 +92,7 @@
         <!--Card 2-->
         <div class="produce-card">
           <img src="../assets/productPage/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button">
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -217,5 +217,6 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <script src="../js/farmer-map.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/product-handling.js"></script>
   </body>
 </html>

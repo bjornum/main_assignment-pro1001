@@ -145,32 +145,25 @@ const getOpenAIResponse = async (userInput) => {
     if (!response.ok) {
       switch (response.status) {
         case 400:
-          errorText.textContent =
-            "Error: Bad Request. Please check your input.";
+          errorText.textContent = "Error: Bad Request. Please check your input.";
           break;
         case 401:
-          errorText.textContent =
-            "Error: Unauthorized. Please check your API key.";
+          errorText.textContent = "Error: Unauthorized. Please check your API key.";
           break;
         case 403:
-          errorText.textContent =
-            "Error: Forbidden. You don't have access to this resource.";
+          errorText.textContent = "Error: Forbidden. You don't have access to this resource.";
           break;
         case 404:
-          errorText.textContent =
-            "Error: Not Found. The endpoint does not exist.";
+          errorText.textContent = "Error: Not Found. The endpoint does not exist.";
           break;
         case 429:
           errorText.textContent = "Error: Too Many Requests. Please slow down.";
           break;
         case 500:
-          errorText.textContent =
-            "Error: Internal Server Error. Please try again later.";
+          errorText.textContent = "Error: Internal Server Error. Please try again later.";
           break;
         default:
-          errorText.textContent = `Error: ${response.status} - ${
-            response.statusText || "Unknown error"
-          }`;
+          errorText.textContent = `Error: ${response.status} - ${response.statusText || "Unknown error"}`;
       }
       errorMessage.style.display = "block";
       return;
