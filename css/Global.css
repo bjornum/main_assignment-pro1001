@@ -60,8 +60,9 @@ body {
   border-radius: 8px; /* this ensures the rounded corners */
   font-size: 1rem;
   font-family: "Arimo", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   transition: all 0.2s ease-in-out;
+  text-shadow: 0 0 1px rgba(0, 0, 0);
 }
 
 .primary-button:hover {
@@ -97,6 +98,15 @@ body {
 
 .padding-20 {
   padding: 20px;
+}
+
+.padding-top-90 {
+  padding-top: 90px;
+}
+
+/* Margin top 45 px set as important, due to something overwriting it.*/
+.margin-top-45 {
+  margin-top: 45px !important;
 }
 
 .object-fit-cover {

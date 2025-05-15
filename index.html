@@ -3,13 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FRAM connects you with fresh, locally-sourced produce and smart home delivery. Discover seasonal groceries and ask us anything through our chat assistant."
+    />
     <title>Final Assignment</title>
     <!-- Import of Frank Ruhl Libre and Arimo style -->
     <link
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Arimo:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/Global.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <!-- <link rel="stylesheet" href="./css/Global.css" /> -->
+    <link
+      rel="preload"
+      href="./css/Global.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./css/Global.css" /></noscript>
     <link rel="stylesheet" href="./css/LandingPage.css" />
     <link rel="stylesheet" href="./css/Navbar.css" />
     <link rel="stylesheet" href="./css/Newsletter.css" />
@@ -95,7 +108,7 @@
           aria-labelledby="shop-heading"
           class="produce-chat-card center-items center-text"
         >
-          <h2 id="shop-heading" class="no-margin" style="padding-top: 90px">
+          <h2 id="shop-heading" class="no-margin padding-top-90">
             Shop our seasonal selection
           </h2>
           <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
@@ -119,8 +132,7 @@
           </p>
           <a
             href="/pages/product.html"
-            class="primary-button produce-full-width-button"
-            style="margin-top: 45px"
+            class="primary-button produce-full-width-button margin-top-45"
           >
             Browse our selection
           </a>
@@ -132,7 +144,7 @@
           class="produce-chat-card center-items center-text"
           style="margin-bottom: 90px"
         >
-          <h2 id="chat-heading" class="no-margin" style="padding-top: 90px">
+          <h2 id="chat-heading" class="no-margin padding-top-90">
             Ask us about anything
           </h2>
           <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
@@ -156,8 +168,7 @@
           </p>
           <a
             href="/pages/chatbot.html"
-            class="primary-button produce-full-width-button"
-            style="margin-top: 45px"
+            class="primary-button produce-full-width-button margin-top-45"
           >
             Go to chat
           </a>
@@ -232,7 +243,7 @@
           Popular produce
         </h2>
         <div class="popular-produce-card-container">
-          <div class="popular-produce-card">
+          <article class="popular-produce-card" aria-labelledby="product-oats">
             <img
               src="./assets/productPage/Oats.avif"
               alt="Close up image at some oats grains"
@@ -243,6 +254,7 @@
             <button
               class="add-cursor-pointer popular-produce-shopping-button"
               onclick="addToCart('Oats')"
+              aria-label="Add Oats to the basket"
             >
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
@@ -264,12 +276,15 @@
               </span>
             </button>
             <p class="display-flex popular-produce-type-and-price">
-              <span>Oats</span>
+              <span id="product-oats">Oats</span>
               <span>48 kr / kg</span>
             </p>
             <p class="popular-produce-weight">1 kg</p>
-          </div>
-          <div class="popular-produce-card">
+          </article>
+          <article
+            class="popular-produce-card"
+            aria-labelledby="product-red-onions"
+          >
             <img
               src="./assets/productPage/Red Onions.avif"
               alt="Zoom in on a cluster of Red Onions"
@@ -279,6 +294,7 @@
             <button
               class="add-cursor-pointer popular-produce-shopping-button"
               onclick="addToCart('Red Onions')"
+              aria-label="Add Red Onions to the basket"
             >
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
@@ -300,12 +316,15 @@
               </span>
             </button>
             <p class="display-flex popular-produce-type-and-price">
-              <span>Red Onions</span>
+              <span id="product-red-onions">Red Onions</span>
               <span>48 kr / kg</span>
             </p>
             <p class="popular-produce-weight">1 kg</p>
-          </div>
-          <div class="popular-produce-card">
+          </article>
+          <article
+            class="popular-produce-card"
+            aria-labelledby="product-potatoes"
+          >
             <img
               src="./assets/productPage/Potatoes.avif"
               alt="Alot of potatoes mixed together"
@@ -315,6 +334,7 @@
             <button
               class="add-cursor-pointer popular-produce-shopping-button"
               onclick="addToCart('Potatoes')"
+              aria-label="Add Potatoes to the basket"
             >
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
@@ -336,15 +356,19 @@
               </span>
             </button>
             <p class="display-flex popular-produce-type-and-price">
-              <span>Potatoes</span>
+              <span id="product-potatoes">Potatoes</span>
               <span>48 kr / kg</span>
             </p>
             <p class="popular-produce-weight">1 kg</p>
-          </div>
+          </article>
         </div>
         <div class="popular-produce-navigation-button-container">
-          <button id="scroll-left">◀</button>
-          <button id="scroll-right">▶</button>
+          <button id="scroll-left" aria-label="Scroll left through products">
+            ◀
+          </button>
+          <button id="scroll-right" aria-label="Scroll right through products">
+            ▶
+          </button>
         </div>
       </section>
 
@@ -359,6 +383,7 @@
           <button
             class="add-cursor-pointer popular-produce-shopping-button"
             onclick="addToCart('Oats')"
+            aria-label="Add Oats to the basket"
           >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
@@ -394,6 +419,7 @@
           <button
             class="add-cursor-pointer popular-produce-shopping-button"
             onclick="addToCart('Red Onions')"
+            aria-label="Add Red Onions to the basket"
           >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
@@ -429,6 +455,7 @@
           <button
             class="add-cursor-pointer popular-produce-shopping-button"
             onclick="addToCart('Garlic')"
+            aria-label="Add Garlic to the basket"
           >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">

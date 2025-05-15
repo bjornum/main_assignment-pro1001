@@ -35,11 +35,12 @@
 }
 
 .green-button {
-  background-color: #008f51;
+  background-color: #006c3f;
   border: none;
   border-radius: 20px;
   padding: 12px 20px;
   cursor: pointer;
+  color: #e1eaf0;
 }
 
 .hamburger-menu-button {
