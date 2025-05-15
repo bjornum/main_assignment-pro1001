@@ -1,0 +1,6 @@
+/* CSS Toward Feedback on product add, remove and checkout. */
+
+/* Gives a nice animation on the feedback block, when seeing the messages.*/
+.feedback-block {
+  transition: opacity 0.5s ease;
+}

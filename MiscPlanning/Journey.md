@@ -98,3 +98,9 @@ More personal report ish for me to look up at later.
 - Images: Reducing the images using https://squoosh.app/editor it shows exactly how much quality it loses, how big size of the file is and type one can use!
 - Images: Reduced the 5 images from 9.87 mb down to 100kb using type avif and rezise to meet the scaling of the exam requirements (448 / 327)
 - Images: Changing everywhere it is done in the application.
+- Landing Page: Visuals now works, all functionality there and navbar displays correctly and leads to correct place.
+- Note: Add feedback to customer when an product have been added to basket.
+- Note: Make Add to Basket button more visual, it is hard to see!
+- Note: Declare Landing Page as completed per 80/20. Newsletter will be its own feature implemented here and on product page.
+- Feedback: Now been created, and displays add, remove and complete remove of product.
+- Feedback: Added on landingpage, productpage and checkoutpage.
