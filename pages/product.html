@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="../css/Newsletter.css" />
     <link rel="stylesheet" href="../css/Feedback.css" />
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
   </head>
   <body class="primary-background-color">
     <!-- Navbar -->
@@ -25,7 +29,11 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
           </svg>
         </button>
       </div>
@@ -35,14 +43,20 @@
         </a>
       </div>
       <div class="header-right">
-        <a href="/pages/checkout.html" class="header-link">
-          <button class="green-button" id="cart-count"></button>
+        <a
+          href="/pages/checkout.html"
+          class="green-button header-link"
+          id="cart-count"
+          aria-label="Go to checkout and view cart"
+        >
         </a>
       </div>
     </header>
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+      <button class="close-menu-button" aria-label="Close side menu">
+        &times;
+      </button>
       <nav class="menu-content">
         <ul class="menu-items large-body">
           <li><a href="/pages/product.html">Products</a></li>
@@ -59,9 +73,10 @@
       <section style="margin-top: 70px">
         <h2 class="sub-header produce-intro-title">Produce</h2>
         <p class="produce-into-text">
-          Explore our selection of seasonal produce, sourced directly from local farms to ensure peak freshness and
-          quality. Every item is chosen with care, supporting sustainable practices and bringing the best of the harvest
-          to your table.
+          Explore our selection of seasonal produce, sourced directly from local
+          farms to ensure peak freshness and quality. Every item is chosen with
+          care, supporting sustainable practices and bringing the best of the
+          harvest to your table.
         </p>
       </section>
       <!-- Produce Cards Section -->
@@ -69,7 +84,10 @@
         <!--Card 1-->
         <div class="produce-card">
           <img src="../assets/productPage/Oats.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Oats')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -81,7 +99,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -94,7 +116,10 @@
         <!--Card 2-->
         <div class="produce-card">
           <img src="../assets/productPage/Red Onions.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Red Onions')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -106,7 +131,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -119,7 +148,10 @@
         <!--Card 3-->
         <div class="produce-card">
           <img src="../assets/productPage/Garlic.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Garlic')">
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Garlic')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -131,7 +163,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -144,7 +180,10 @@
         <!--Card 4-->
         <div class="produce-card">
           <img src="../assets/productPage/Potatoes.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Potatoes')">
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Potatoes')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -156,7 +195,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -169,7 +212,10 @@
         <!--Card 5-->
         <div class="produce-card">
           <img src="../assets/productPage/Carrots.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Carrots')">
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Carrots')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -181,7 +227,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -196,7 +246,12 @@
       <section class="partnering-farms-wrapper">
         <!-- Intro section to partner maps -->
         <section class="partnering-farms-text">
-          <h2 class="sub-header" style="padding-bottom: 45px; padding-top: 45px">See our partnering farms</h2>
+          <h2
+            class="sub-header"
+            style="padding-bottom: 45px; padding-top: 45px"
+          >
+            See our partnering farms
+          </h2>
         </section>
 
         <!-- Farmers Map -->
@@ -216,7 +271,10 @@
     </main>
 
     <!-- Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
     <script src="../js/farmer-map.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/product-handling.js"></script>

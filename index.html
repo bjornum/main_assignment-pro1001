@@ -29,7 +29,11 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
           </svg>
         </button>
       </div>
@@ -39,14 +43,20 @@
         </a>
       </div>
       <div class="header-right">
-        <a href="/pages/checkout.html" class="header-link">
-          <button class="green-button" id="cart-count"></button>
+        <a
+          href="/pages/checkout.html"
+          class="green-button header-link"
+          id="cart-count"
+          aria-label="Go to checkout and view cart"
+        >
         </a>
       </div>
     </header>
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+      <button class="close-menu-button" aria-label="Close side menu">
+        &times;
+      </button>
       <nav class="menu-content">
         <ul class="menu-items large-body">
           <li><a href="/pages/product.html">Products</a></li>
@@ -72,7 +82,9 @@
       </section>
       <small class="image-credit">
         <span> Photo by </span>
-        <a href="https://unsplash.com/@markusspiske" target="_blank">Markus Spiske</a>
+        <a href="https://unsplash.com/@markusspiske" target="_blank"
+          >Markus Spiske</a
+        >
         <span>on Unsplash</span>
       </small>
 
@@ -80,8 +92,12 @@
       <section class="produce-chat-container display-flex">
         <!-- Produce Section -->
         <section class="produce-chat-card center-items center-text">
-          <h2 class="no-margin" style="padding-top: 90px">Shop our seasonal selection</h2>
-          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">Updated every week</p>
+          <h2 class="no-margin" style="padding-top: 90px">
+            Shop our seasonal selection
+          </h2>
+          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
+            Updated every week
+          </p>
           <img
             src="./assets/landingPage/produce.avif"
             alt="Basket filled with fresh vegetables including tomatoes, zucchini, green beans, and leafy greens"
@@ -89,21 +105,35 @@
           />
           <small class="image-credit">
             <span> Photo by </span>
-            <a href="https://unsplash.com/@ninaluong" target="_blank">Nina Luong</a>
+            <a href="https://unsplash.com/@ninaluong" target="_blank"
+              >Nina Luong</a
+            >
             <span>on Unsplash</span>
           </small>
-          <p>New produce is added continuously as time goes by and the seasons change.</p>
-          <a href="/pages/product.html" style="text-decoration: none">
-            <button class="produce-full-width-button" style="margin-top: 45px; cursor: pointer">
-              Browse our selection
-            </button>
+          <p>
+            New produce is added continuously as time goes by and the seasons
+            change.
+          </p>
+          <a
+            href="/pages/product.html"
+            class="primary-button produce-full-width-button"
+            style="margin-top: 45px"
+          >
+            Browse our selection
           </a>
         </section>
 
         <!-- Go to Chat page -->
-        <section class="produce-chat-card center-items center-text" style="margin-bottom: 90px">
-          <h2 class="no-margin" style="padding-top: 90px">Ask us about anything</h2>
-          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">All your questions answered</p>
+        <section
+          class="produce-chat-card center-items center-text"
+          style="margin-bottom: 90px"
+        >
+          <h2 class="no-margin" style="padding-top: 90px">
+            Ask us about anything
+          </h2>
+          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
+            All your questions answered
+          </p>
           <img
             src="./assets/landingPage/chat.avif"
             alt="Man on a green field, pointing to the distance."
@@ -111,12 +141,21 @@
           />
           <small class="image-credit">
             <span> Photo by </span>
-            <a href="https://unsplash.com/@rebeccaritchie" target="_blank">Rebecca Ritchie</a>
+            <a href="https://unsplash.com/@rebeccaritchie" target="_blank"
+              >Rebecca Ritchie</a
+            >
             <span>on Unsplash</span>
           </small>
-          <p>New produce is added continuously as time goes by and the seasons change.</p>
-          <a href="/pages/chatbot.html" style="text-decoration: none">
-            <button class="produce-full-width-button" style="margin-top: 45px; cursor: pointer">Go to chat</button>
+          <p>
+            New produce is added continuously as time goes by and the seasons
+            change.
+          </p>
+          <a
+            href="/pages/chatbot.html"
+            class="primary-button produce-full-width-button"
+            style="margin-top: 45px"
+          >
+            Go to chat
           </a>
         </section>
       </section>
@@ -124,7 +163,9 @@
       <!-- Info Sections  -->
       <section class="info-section primary-background-color display-flex">
         <!-- Right Side: Title -->
-        <section class="info-title display-flex center-items center-text general-border">
+        <section
+          class="info-title display-flex center-items center-text general-border"
+        >
           <h2 class="info-header">This is how it works</h2>
         </section>
 
@@ -135,10 +176,13 @@
             <h3 class="info-sub-header">Order Groceries</h3>
             <div class="info-content">
               <p>
-                Fram is a circular service that ensures your kitchen is always stocked with the essentials you need.
-                Browse our seasonal selection, choose your items and place your order online.
+                Fram is a circular service that ensures your kitchen is always
+                stocked with the essentials you need. Browse our seasonal
+                selection, choose your items and place your order online.
               </p>
-              <a class="info-link" href="./pages/products.html">See our stock here</a>
+              <a class="info-link" href="./pages/products.html"
+                >See our stock here</a
+              >
             </div>
           </section>
 
@@ -146,8 +190,9 @@
             <h3 class="info-sub-header">Stock up</h3>
             <div class="info-content">
               <p>
-                Once your order arrives, unpack the produce and store it however it works best for you. Hold onto the
-                containers - they are yours to keep until your next order.
+                Once your order arrives, unpack the produce and store it however
+                it works best for you. Hold onto the containers - they are yours
+                to keep until your next order.
               </p>
             </div>
           </section>
@@ -156,8 +201,10 @@
             <h3 class="info-sub-header">Scan & reuse</h3>
             <div class="info-content">
               <p>
-                Ready for a refill? Grab the containers from your last order and scan the QR code with our app or your
-                phone's camera. This instantly adds the items back to your cart, making reordering a breeze.
+                Ready for a refill? Grab the containers from your last order and
+                scan the QR code with our app or your phone's camera. This
+                instantly adds the items back to your cart, making reordering a
+                breeze.
               </p>
             </div>
           </section>
@@ -166,8 +213,9 @@
             <h3 class="info-sub-header">Swap & reuse</h3>
             <div class="info-content">
               <p>
-                When we deliver your new order, simply leave your empty containers outside. We'll pick them up, clean
-                them thoroughly and reuse them for future deliveries.
+                When we deliver your new order, simply leave your empty
+                containers outside. We'll pick them up, clean them thoroughly
+                and reuse them for future deliveries.
               </p>
             </div>
           </section>
@@ -176,7 +224,9 @@
 
       <!-- Popular Produce Section -->
       <section style="margin-bottom: 90px" class="on-mobile-only">
-        <h2 class="center-text" style="margin-top: 90px; margin-bottom: 30px">Popular produce</h2>
+        <h2 class="center-text" style="margin-top: 90px; margin-bottom: 30px">
+          Popular produce
+        </h2>
         <div class="popular-produce-card-container">
           <div class="popular-produce-card">
             <img
@@ -186,7 +236,10 @@
               class="object-fit-cover"
             />
 
-            <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
+            <button
+              class="add-cursor-pointer popular-produce-shopping-button"
+              onclick="addToCart('Oats')"
+            >
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
                 <svg
@@ -198,7 +251,11 @@
                   class="size-6"
                   style="width: 16px; height: 16px"
                 >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                  />
                 </svg>
               </span>
             </button>
@@ -215,7 +272,10 @@
               width="100%"
               class="object-fit-cover"
             />
-            <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
+            <button
+              class="add-cursor-pointer popular-produce-shopping-button"
+              onclick="addToCart('Red Onions')"
+            >
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
                 <svg
@@ -227,7 +287,11 @@
                   class="size-6"
                   style="width: 16px; height: 16px"
                 >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                  />
                 </svg>
               </span>
             </button>
@@ -244,7 +308,10 @@
               width="100%"
               class="object-fit-cover"
             />
-            <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Potatoes')">
+            <button
+              class="add-cursor-pointer popular-produce-shopping-button"
+              onclick="addToCart('Potatoes')"
+            >
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
                 <svg
@@ -256,7 +323,11 @@
                   class="size-6"
                   style="width: 16px; height: 16px"
                 >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                  />
                 </svg>
               </span>
             </button>
@@ -277,8 +348,14 @@
       <section class="produce-cards">
         <!--Card 1-->
         <div class="produce-card on-desktop-only">
-          <img src="../assets/productPage/Oats.avif" alt="Zoom in on several grains of oats" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
+          <img
+            src="../assets/productPage/Oats.avif"
+            alt="Zoom in on several grains of oats"
+          />
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Oats')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -290,7 +367,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -302,8 +383,14 @@
         </div>
         <!--Card 2-->
         <div class="produce-card on-desktop-only">
-          <img src="../assets/productPage/Red Onions.avif" alt="Zoomed in on a cluster of red onions" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
+          <img
+            src="../assets/productPage/Red Onions.avif"
+            alt="Zoomed in on a cluster of red onions"
+          />
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Red Onions')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -315,7 +402,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>
@@ -327,8 +418,14 @@
         </div>
         <!--Card 3-->
         <div class="produce-card on-desktop-only">
-          <img src="../assets/productPage/Garlic.avif" alt="Zoom in on a cluster of Garlic laying around" />
-          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Garlic')">
+          <img
+            src="../assets/productPage/Garlic.avif"
+            alt="Zoom in on a cluster of Garlic laying around"
+          />
+          <button
+            class="add-cursor-pointer popular-produce-shopping-button"
+            onclick="addToCart('Garlic')"
+          >
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -340,7 +437,11 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
               </svg>
             </span>
           </button>

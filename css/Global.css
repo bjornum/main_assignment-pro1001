@@ -53,6 +53,15 @@ body {
   background-color: #dc4131;
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 8px; /* this ensures the rounded corners */
+  font-size: 1rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
 }
 
 .primary-button:hover {
@@ -115,6 +124,18 @@ body {
 /* Show on Mobile Only */
 .on-mobile-only {
   display: block;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.text-button:hover {
+  text-decoration: underline;
 }
 
 /* Specific Elements */

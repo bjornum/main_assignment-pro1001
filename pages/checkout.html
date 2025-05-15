@@ -22,7 +22,11 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
           </svg>
         </button>
       </div>
@@ -32,14 +36,20 @@
         </a>
       </div>
       <div class="header-right">
-        <a href="/pages/checkout.html" class="header-link">
-          <button class="green-button" id="cart-count"></button>
+        <a
+          href="/pages/checkout.html"
+          class="green-button header-link"
+          id="cart-count"
+          aria-label="Go to checkout and view cart"
+        >
         </a>
       </div>
     </header>
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+      <button class="close-menu-button" aria-label="Close side menu">
+        &times;
+      </button>
       <nav class="menu-content">
         <ul class="menu-items large-body">
           <li><a href="/pages/product.html">Products</a></li>
@@ -56,7 +66,9 @@
     <section>
       <div class="checkout-total" id="checkout-total">
         <p id="total-price">Total: 0 kr</p>
-        <button id="checkout-button" class="green-button" onclick="checkout()">Checkout</button>
+        <button id="checkout-button" class="green-button" onclick="checkout()">
+          Checkout
+        </button>
       </div>
     </section>
 
