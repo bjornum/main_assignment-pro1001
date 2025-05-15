@@ -91,7 +91,7 @@ More personal report ish for me to look up at later.
 
 # 15.05.2025
 
-- Official personal deadline to have the project done. As having the backend one aswell.
+- The day before Official personal deadline to have the project done. As having the backend one aswell.
 - Decided to go with the 80/20 rule, and hopefully have time to finalise it.
 - While unhappy with how things are done, ill not down the todos and see if i can wrap the backend exam earlier and come back to this.
 - Checkout: Settled for local storage, as it is an simple way to simulate the process using the browser "storage"
@@ -107,3 +107,5 @@ More personal report ish for me to look up at later.
 - Cleanup: product-handling.js now cleaned up and are fully commented. Still checkout feature to go, but looking good.
 - Images: Reduced size of images without destroying too much of the quality. This on main background, produce and chat image on landing page.
 - Images: Added alt text, and placed a credit on the background images on landing page.
+- Semantic focus and Lighthouse optimisation!
+- EOD - Will resume work tomorow. Last day then.
