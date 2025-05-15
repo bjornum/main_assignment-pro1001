@@ -51,6 +51,16 @@
       </nav>
     </div>
     <h1 style="margin-top: 50px">Checkout</h1>
+
+    <!-- Total Checkout, and checkout button -->
+    <section>
+      <div class="checkout-total" id="checkout-total">
+        <p id="total-price">Total: 0 kr</p>
+        <button id="checkout-button" class="green-button" onclick="checkout()">Checkout</button>
+      </div>
+    </section>
+
+    <!-- Checkout container, having all products user wish to buy - can adjust accordingly here. -->
     <div class="checkout-container" id="productContainer"></div>
 
     <!-- User feedback when adding an product to basket - use inline styling -->

@@ -57,6 +57,7 @@ const addToCart = (productName) => {
   saveCart(cart);
   updateCartCount();
   displayCartItems();
+  updateTotalPrice(); // Update the total price
 
   // Show feedback message
   showFeedbackMessage(`Added ${productName} to the basket`, "add");
@@ -94,7 +95,6 @@ const updateCart = (productName, quantity) => {
   const existingProduct = cart.find((item) => item.name === productName);
 
   if (existingProduct) {
-    // Store the previous quantity for comparison
     const previousQuantity = existingProduct.quantity;
     existingProduct.quantity = quantity;
 
@@ -111,6 +111,7 @@ const updateCart = (productName, quantity) => {
   saveCart(cart);
   updateCartCount();
   displayCartItems();
+  updateTotalPrice(); // Update the total price
 };
 
 /* Update Cart Count with the number of items in the cart
@@ -122,6 +123,31 @@ const updateCartCount = () => {
   const totalItems = getTotalItems();
   if (cartCountElement) {
     cartCountElement.textContent = totalItems > 0 ? totalItems : "0";
+  }
+};
+
+// Update Total Price
+const updateTotalPrice = () => {
+  const totalPriceElement = document.getElementById("total-price");
+  const checkoutButton = document.getElementById("checkout-button");
+  const cart = getCart();
+
+  // Calculate the total price
+  const totalPrice = cart.reduce((total, item) => {
+    const pricePerItem = prices[item.name];
+    return total + pricePerItem * item.quantity;
+  }, 0);
+
+  // Update the total price in the UI
+  if (totalPriceElement) {
+    totalPriceElement.textContent = `Total: ${totalPrice.toFixed(2)} kr`;
+  }
+
+  // Enable or disable the checkout button based on the cart's contents
+  if (checkoutButton) {
+    checkoutButton.disabled = totalPrice === 0;
+    checkoutButton.style.opacity = totalPrice === 0 ? "0.5" : "1";
+    checkoutButton.style.cursor = totalPrice === 0 ? "not-allowed" : "pointer";
   }
 };
 
@@ -138,6 +164,7 @@ const removeFromCart = (productName) => {
   saveCart(cart);
   updateCartCount();
   displayCartItems();
+  updateTotalPrice(); // Update the total price
 };
 
 // ===== UI Display =====
@@ -242,10 +269,87 @@ const checkout = () => {
     alert("Your cart is empty!");
     return;
   }
-  // Work in progress: Implement checkout logic here
+
+  // Create a confirmation modal
+  const modal = document.createElement("div");
+  modal.style.position = "fixed";
+  modal.style.top = "50%";
+  modal.style.left = "50%";
+  modal.style.transform = "translate(-50%, -50%)";
+  modal.style.backgroundColor = "white";
+  modal.style.padding = "20px";
+  modal.style.borderRadius = "10px";
+  modal.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
+  modal.style.zIndex = "1000";
+  modal.style.width = "300px";
+  modal.style.textAlign = "center";
+
+  const cartSummary = cart.map((item) => `${item.quantity} x ${item.name}`).join("<br>");
+  modal.innerHTML = `
+    <h3>Confirm Checkout</h3>
+    <p>Your cart:</p>
+    <p>${cartSummary}</p>
+    <button id="confirm-checkout" style="margin-right: 10px; padding: 10px 20px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">Confirm</button>
+    <button id="cancel-checkout" style="padding: 10px 20px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;">Cancel</button>
+  `;
+
+  document.body.appendChild(modal);
+
+  // Add event listeners for the buttons
+  document.getElementById("confirm-checkout").addEventListener("click", () => {
+    // Generate the receipt
+    const receipt = cart
+      .map((item) => `${item.quantity} x ${item.name} = ${prices[item.name] * item.quantity} kr`)
+      .join("<br>");
+    const totalPrice = cart.reduce((total, item) => total + prices[item.name] * item.quantity, 0);
+
+    const receiptContent = `
+      <h3>Receipt</h3>
+      <p>--------------------</p>
+      <p>${receipt}</p>
+      <p>--------------------</p>
+      <p>Total: ${totalPrice.toFixed(2)} kr</p>
+      <button id="back-to-products" style="margin-top: 20px; padding: 10px 20px; background-color: #2196f3; color: white; border: none; border-radius: 5px; cursor: pointer;">Back to Products</button>
+    `;
+
+    // Hide the product container and display the receipt
+    const productContainer = document.getElementById("productContainer");
+    productContainer.style.display = "none";
+
+    // const totalPriceAndCheckout = document.getElementById("checkout-total");
+    // productContainer.style.display = "none";
+
+    const receiptContainer = document.createElement("div");
+    receiptContainer.id = "receiptContainer";
+    receiptContainer.style.textAlign = "center";
+    receiptContainer.style.marginTop = "20px";
+    receiptContainer.innerHTML = receiptContent;
+
+    document.body.appendChild(receiptContainer);
+
+    // Clear the cart
+    localStorage.removeItem("cart");
+    updateCartCount();
+    displayCartItems();
+    updateTotalPrice();
+
+    // Remove the modal
+    modal.remove();
+
+    // Add event listener to the "Back to Products" button
+    document.getElementById("back-to-products").addEventListener("click", () => {
+      window.location.href = "/pages/product.html"; // Redirect to the products page
+    });
+  });
+
+  document.getElementById("cancel-checkout").addEventListener("click", () => {
+    // Remove the modal
+    modal.remove();
+  });
 };
 
 /* ===== Triggers on page load ===== */
 
 updateCartCount();
 displayCartItems();
+updateTotalPrice();
