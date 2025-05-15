@@ -7,6 +7,7 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-image: url("../assets/landingPage/main-background.avif");
 }
 
 .top-logo {
