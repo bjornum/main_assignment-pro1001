@@ -104,3 +104,4 @@ More personal report ish for me to look up at later.
 - Note: Declare Landing Page as completed per 80/20. Newsletter will be its own feature implemented here and on product page.
 - Feedback: Now been created, and displays add, remove and complete remove of product.
 - Feedback: Added on landingpage, productpage and checkoutpage.
+- Cleanup: product-handling.js now cleaned up and are fully commented. Still checkout feature to go, but looking good.
