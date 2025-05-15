@@ -105,3 +105,4 @@ More personal report ish for me to look up at later.
 - Feedback: Now been created, and displays add, remove and complete remove of product.
 - Feedback: Added on landingpage, productpage and checkoutpage.
 - Cleanup: product-handling.js now cleaned up and are fully commented. Still checkout feature to go, but looking good.
+- Images: Reduced size of images without destroying too much of the quality. This on main background, produce and chat image on landing page.
