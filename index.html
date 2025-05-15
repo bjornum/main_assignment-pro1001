@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/LandingPage.css" />
     <link rel="stylesheet" href="./css/Navbar.css" />
     <link rel="stylesheet" href="./css/Newsletter.css" />
-    <link rel="stylesheet" href="./css/ProducePage.css" />
+    <link rel="stylesheet" href="./css/ProductPage.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -38,7 +38,9 @@
         </a>
       </div>
       <div class="header-right">
-        <button class="green-button">92</button>
+        <a href="/pages/checkout.html" class="header-link">
+          <button class="green-button" id="cart-count"></button>
+        </a>
       </div>
     </header>
     <!-- Side Menu -->
@@ -161,7 +163,7 @@
           <div class="popular-produce-card">
             <img src="./assets/productPage/Oats.avif" alt="" width="100%" class="object-fit-cover" />
 
-            <button class="add-cursor-pointer popular-produce-shopping-button">
+            <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
                 <svg
@@ -185,7 +187,7 @@
           </div>
           <div class="popular-produce-card">
             <img src="./assets/productPage/Red Onions.avif" alt="" width="100%" class="object-fit-cover" />
-            <button class="add-cursor-pointer popular-produce-shopping-button">
+            <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
                 <svg
@@ -209,7 +211,7 @@
           </div>
           <div class="popular-produce-card">
             <img src="./assets/productPage/Potatoes.avif" alt="" width="100%" class="object-fit-cover" />
-            <button class="add-cursor-pointer popular-produce-shopping-button">
+            <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Potatoes')">
               <span> Add to basket </span>
               <span class="popular-produce-shopping-button-icon">
                 <svg
@@ -243,7 +245,7 @@
         <!--Card 1-->
         <div class="produce-card on-desktop-only">
           <img src="../assets/productPage/Oats.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button">
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -268,7 +270,7 @@
         <!--Card 2-->
         <div class="produce-card on-desktop-only">
           <img src="../assets/productPage/Red Onions.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button">
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -293,7 +295,7 @@
         <!--Card 3-->
         <div class="produce-card on-desktop-only">
           <img src="../assets/productPage/Garlic.avif" alt="" />
-          <button class="add-cursor-pointer popular-produce-shopping-button">
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Garlic')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -328,5 +330,6 @@
     </main>
     <script src="./js/script.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="../js/product-handling.js"></script>
   </body>
 </html>
