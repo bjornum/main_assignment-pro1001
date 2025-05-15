@@ -88,3 +88,13 @@ More personal report ish for me to look up at later.
   -- Scroll actually works now!
   -- Newer message populates at the bottom.
   -- Cleanup in code completed
+
+# 15.05.2025
+
+- Official personal deadline to have the project done. As having the backend one aswell.
+- Decided to go with the 80/20 rule, and hopefully have time to finalise it.
+- While unhappy with how things are done, ill not down the todos and see if i can wrap the backend exam earlier and come back to this.
+- Checkout: Settled for local storage, as it is an simple way to simulate the process using the browser "storage"
+- Images: Reducing the images using https://squoosh.app/editor it shows exactly how much quality it loses, how big size of the file is and type one can use!
+- Images: Reduced the 5 images from 9.87 mb down to 100kb using type avif and rezise to meet the scaling of the exam requirements (448 / 327)
+- Images: Changing everywhere it is done in the application.
