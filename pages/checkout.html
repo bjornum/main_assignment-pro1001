@@ -5,10 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
     <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Navbar.css" />
     <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/Feedback.css" />
   </head>
   <body>
+    <!-- Navbar -->
+    <header class="header">
+      <div class="header-left">
+        <button class="hamburger-menu-button" aria-label="Open side menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1"
+            stroke="black"
+            class="hamburger-menu-icon"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="/index.html" class="header-link">
+          <h1 class="header-title">FRAM</h1>
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="/pages/checkout.html" class="header-link">
+          <button class="green-button" id="cart-count"></button>
+        </a>
+      </div>
+    </header>
+    <!-- Side Menu -->
+    <div id="side-menu" class="side-menu">
+      <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+      <nav class="menu-content">
+        <ul class="menu-items large-body">
+          <li><a href="/pages/product.html">Products</a></li>
+          <li><a href="/pages/chatbot.html">Chat</a></li>
+        </ul>
+        <div class="menu-footer">
+          <a href="/pages/checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </div>
     <div class="container" id="productContainer"></div>
 
     <!-- User feedback when adding an product to basket - use inline styling -->
@@ -16,6 +57,7 @@
       <p id="feedback-text"></p>
     </section>
 
+    <script src="../js/navbar.js"></script>
     <script src="../js/product-handling.js"></script>
   </body>
 </html>

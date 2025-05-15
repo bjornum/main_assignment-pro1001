@@ -8,6 +8,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: flex-start;
+  margin-top: 50px;
 }
 
 .card {
