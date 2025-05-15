@@ -91,8 +91,11 @@
       <!-- Produce Section -->
       <section class="produce-chat-container display-flex">
         <!-- Produce Section -->
-        <section class="produce-chat-card center-items center-text">
-          <h2 class="no-margin" style="padding-top: 90px">
+        <article
+          aria-labelledby="shop-heading"
+          class="produce-chat-card center-items center-text"
+        >
+          <h2 id="shop-heading" class="no-margin" style="padding-top: 90px">
             Shop our seasonal selection
           </h2>
           <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
@@ -121,14 +124,15 @@
           >
             Browse our selection
           </a>
-        </section>
+        </article>
 
         <!-- Go to Chat page -->
-        <section
+        <article
+          aria-labelledby="chat-heading"
           class="produce-chat-card center-items center-text"
           style="margin-bottom: 90px"
         >
-          <h2 class="no-margin" style="padding-top: 90px">
+          <h2 id="chat-heading" class="no-margin" style="padding-top: 90px">
             Ask us about anything
           </h2>
           <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
@@ -157,7 +161,7 @@
           >
             Go to chat
           </a>
-        </section>
+        </article>
       </section>
 
       <!-- Info Sections  -->
