@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 
-.container {
+.checkout-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -11,7 +11,7 @@ body {
   margin-top: 50px;
 }
 
-.card {
+.checkout-card {
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 16px;
@@ -22,28 +22,28 @@ body {
   align-items: center;
 }
 
-.card img {
+.checkout-card img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.card h3 {
+.checkout-card h3 {
   margin: 10px 0 5px;
 }
 
-.card .price {
+.checkout-card .price {
   margin-bottom: 8px;
 }
 
-.card .controls {
+.checkout-card .controls {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
 @media (max-width: 768px) {
-  .card {
+  .checkout-card {
     width: 100%;
   }
 }

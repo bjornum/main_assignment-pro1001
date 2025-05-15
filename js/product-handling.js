@@ -160,7 +160,7 @@ const displayCartItems = () => {
     .filter((item) => item.quantity > 0)
     .forEach((product) => {
       const card = document.createElement("div");
-      card.className = "card";
+      card.className = "checkout-card";
 
       const pricePerItem = prices[product.name];
       const totalPrice = (pricePerItem * product.quantity).toFixed(2);
@@ -229,9 +229,9 @@ const showFeedbackMessage = (message, action) => {
   setTimeout(() => {
     feedbackSection.style.opacity = "0"; // Fade out effect
     setTimeout(() => {
-      feedbackSection.remove(); // Remove the block from the DOM
-    }, 500); // Wait for fade-out effect to complete
-  }, 5000);
+      feedbackSection.remove(); // Remove from DOM
+    }, 500);
+  }, 2000);
 };
 
 // ===== Checkout (example) =====
