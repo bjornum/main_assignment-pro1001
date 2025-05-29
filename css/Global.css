@@ -124,12 +124,19 @@ main {
   padding-top: 90px;
 }
 
-/* Margin top 45px set as important, due to something overwriting it.*/
+/* ===== Margin Bottoms, Set with Important due to something overwriting it. ===== */
+.margin-bottom-12 {
+  margin-bottom: 12px !important;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
 .margin-top-45 {
   margin-top: 45px !important;
 }
 
-/* Margin top 90px set as important, due to something overwriting it.*/
 .margin-bottom-90 {
   margin-bottom: 90px !important;
 }
