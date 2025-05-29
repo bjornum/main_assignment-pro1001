@@ -111,6 +111,7 @@
   height: 100%;
 }
 
+/* Affects the elements (product and chat) and most important position them more correctly according to the design. */
 .menu-items {
   list-style: none;
   padding: 0;
@@ -119,12 +120,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  padding-top: 30%;
 }
 
+/* Creates an slight gap between the Product and Chat link in sidebar */
 .menu-items li {
-  margin: 20px 0;
+  margin: 10px 0;
 }
+
+/* General styling of the elements */
 .menu-items a {
   font-family: "Frank Ruhl Libre", sans-serif;
   color: #0b0a08;
@@ -153,5 +156,11 @@
 
   .side-menu-border {
     margin-top: 47px;
+  }
+
+  /* Positioning the links (products and Chat) toward center ish, than the Mobile are showing */
+  .menu-items {
+    margin-top: 50px;
+    padding-top: 30%;
   }
 }

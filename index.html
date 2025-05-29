@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header-left">
         <button class="hamburger-menu-button" aria-label="Open side menu">
           <svg
@@ -57,22 +57,24 @@
       </div>
     </header>
     <!-- Side Menu -->
-    <div id="side-menu" class="side-menu">
+    <aside id="side-menu" class="side-menu">
       <div class="display-flex center-items">
         <button class="close-menu-button" aria-label="Close side menu">&times;</button>
-        <h2 class="on-mobile-only side-menu-title header-title">FRAM</h2>
+        <a href="/index.html" class="header-link side-menu-title on-mobile-only">
+          <h1 class="header-title">FRAM</h1>
+        </a>
       </div>
       <div class="side-menu-border"></div>
-      <nav class="menu-content">
+      <nav class="menu-content" role="navigation">
         <ul class="menu-items large-body">
-          <li><a href="/pages/product.html">Products</a></li>
-          <li><a href="/pages/chatbot.html">Chat</a></li>
+          <li><a href="/pages/product.html" aria-label="Go to product page">Products</a></li>
+          <li><a href="/pages/chatbot.html" aria-label="Go to the chatbot">Chat</a></li>
         </ul>
         <div class="menu-footer">
-          <a href="/pages/checkout.html">Checkout</a>
+          <a href="/pages/checkout.html" aria-label="Go to checkout page">Checkout</a>
         </div>
       </nav>
-    </div>
+    </aside>
     <!-- Main -->
     <main>
       <!-- Large Image - Background -->
