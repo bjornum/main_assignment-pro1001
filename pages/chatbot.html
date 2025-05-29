@@ -98,8 +98,11 @@
           class="chatbot-input"
           rows="2"
         ></textarea>
+
         <button id="sendBtn" type="submit" class="chatbot-send-button" aria-label="Send message">
+          <!-- Default Button Icon -->
           <svg
+            id="defaultButtonIcon"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -108,6 +111,18 @@
             class="chatbot-send-button-icon"
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+          </svg>
+          <!-- Sending Button icon -->
+          <svg
+            id="btnChangeOnSubmit"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="chatbot-send-button-icon default-hidden"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
         </button>
       </form>
