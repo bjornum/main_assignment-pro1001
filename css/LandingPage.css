@@ -51,11 +51,29 @@
 }
 
 /* ===== Produce and Chatbot Section ===== */
+
+/* Makes the Produce and chat stack on top of each other */
 .produce-chat-container {
   flex-direction: column;
-  gap: 20px;
 }
 
+/* Ensuring the font size and design on the produce and chat title */
+.produce-chat-title {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.produce-chat-subtitle {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 8px;
+  line-height: 1.2;
+}
+
+/* Styling the image to fit the design, especially in mind with the spacing around it */
 .produce-chat-image {
   width: 100%;
   object-fit: cover;
@@ -63,9 +81,9 @@
   height: 327px;
   padding: 0px 16px;
   margin-top: 45px;
-  margin-bottom: 45px;
 }
 
+/* Ensuring that the button scales accordingly to the design on Mobile */
 .produce-full-width-button {
   height: 45px;
   width: calc(100% - 40px);
@@ -196,7 +214,6 @@
   .top-logo {
     top: 20%;
     left: 50%;
-    transform: translateX(-50%);
     font-size: 200px;
   }
 
@@ -204,7 +221,6 @@
   .top-underline {
     top: 40%;
     left: 50%;
-    transform: translateX(-50%);
     height: 500px;
     background-color: white;
   }
@@ -213,31 +229,48 @@
   .top-subheading {
     top: 82%;
     left: 50%;
-    transform: translateX(-50%);
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
   }
 
   /* ===== Produce and Chat Section ===== */
+
+  /* Makes the Produce and chat section stand next to each other on Desktop */
   .produce-chat-container {
     flex-direction: row;
   }
 
+  .produce-chat-title {
+    font-size: 36px;
+  }
+
+  .produce-chat-subtitle {
+    font-size: 20px;
+    padding-bottom: 45px;
+  }
+
+  /* Image on Desktop got a stricter width compared to Mobile */
   .produce-chat-image {
     width: 448px;
     height: 327px;
-    object-fit: cover;
     display: block;
     margin: 0 auto;
   }
 
+  /* Adjustment as this one scaled poorly from Mobile to Desktop, requiring some extra touch to look nice */
+  .image-credits-positioning {
+    text-align: center;
+  }
+
+  /* An Desktop Only class, which again ensures the scaling between these to be as designed on Desktop */
   .produce-chat-card {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
   }
 
+  /* Button got a set width on Desktop */
   .produce-full-width-button {
     width: 320px;
   }

@@ -37,6 +37,17 @@ main {
   color: #ffffff;
 }
 
+/*Due to not finding a good colour on stylesheet, i made this for those dark grey text */
+.greyed-text {
+  color: #5a5d5f;
+}
+
+/* At certain places, i felt it would be good to credit the ones taking the photo, so this class places it nicely */
+.image-credit {
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
 .primary-background-color {
   background-color: #f7f2de;
 }
@@ -62,17 +73,17 @@ main {
   text-align: center;
   height: 45px;
   line-height: 45px;
-  border-radius: 8px; /* this ensures the rounded corners */
+  border-radius: 8px;
   font-size: 1rem;
   font-family: "Arimo", sans-serif;
-  font-weight: bold;
   transition: all 0.2s ease-in-out;
   text-shadow: 0 0 1px rgba(0, 0, 0);
 }
 
+/* Slightly darker colour on the button, aswell as removing the link default styling */
 .primary-button:hover {
   background-color: #ae2e21;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Icon Button */
