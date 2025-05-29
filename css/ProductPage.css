@@ -117,13 +117,15 @@
   text-transform: uppercase;
   padding-bottom: 45px;
   padding-top: 45px;
+  width: 100%;
 }
 
 .partnering-farms-text {
   text-align: center;
   padding: 0 45px;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
   color: #333;
   margin-bottom: 25px;
   outline: 1px solid black;
