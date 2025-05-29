@@ -133,12 +133,20 @@ main {
   margin-bottom: 24px !important;
 }
 
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
 .margin-top-45 {
   margin-top: 45px !important;
 }
 
 .margin-bottom-90 {
   margin-bottom: 90px !important;
+}
+
+.margin-right-30 {
+  margin-right: 30px !important;
 }
 
 .object-fit-cover {

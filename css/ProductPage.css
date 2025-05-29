@@ -28,7 +28,6 @@
 .produce-cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 40px;
@@ -49,9 +48,8 @@
   margin-bottom: 10px;
 }
 
-.produce-card h3 {
-  font-size: 1.2rem;
-  margin: 10px 0;
+.produce-card-spacing {
+  margin-right: 0px;
 }
 
 /* Note to self: renamed this class - will break product page - Fix */
@@ -59,18 +57,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  width: 35%;
+  height: 35px;
+  width: 30%;
   background-color: black;
-  color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 0.8rem;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #e1eaf0;
   cursor: pointer;
-  margin: -50px 10px 0 auto;
+  margin: -65px 20px 0 auto;
   z-index: 10;
   position: relative;
-  border-radius: 50px;
+  font-family: "Arimo", sans-serif;
 }
 
 /* Note to self: renamed this class - will break product page - Fix */
@@ -80,21 +78,30 @@
   align-items: center;
 }
 
+/* Setting a size of the svg icon, due to the inate class from heroicons not working (tailwind class i belive?) */
+.produce-shopping-button-svg {
+  width: 16px;
+  height: 16px;
+}
+
 /* Note to self: renamed this class - will break product page - Fix */
 .produce-type-and-price {
-  margin-top: 18px;
+  margin-top: 28px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 14px;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  font-size: 20px;
 }
 
 /* Note to self: renamed this class - will break product page - Fix */
 .produce-weight {
   margin-top: 5px;
-  padding-left: 5px;
   text-align: left;
-  margin-left: 0;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #5a5d5f;
 }
 
 /* ===== Partnering Farm Text and Map ===== */
@@ -143,13 +150,36 @@
   /* Reset the margin top, and made it consistently with 45 padding */
   .produce-cards {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+
     padding: 45px;
     margin-top: 0px;
   }
 
+  /* Product Type and Price */
+  .produce-type-and-price {
+    margin-top: 28px;
+    display: flex;
+    font-size: 20px;
+  }
+
+  /* Note to self: renamed this class - will break product page - Fix */
+  .produce-weight {
+    margin-top: 28px;
+    display: flex;
+    font-size: 20px;
+  }
+
+  /* Add to Basket Button on top of the cards */
+  .produce-shopping-button {
+    width: 30%;
+  }
+
   .produce-card {
     margin-bottom: 60px;
+  }
+
+  .produce-card-spacing {
+    margin-right: 30px;
   }
 
   .produce-card img {

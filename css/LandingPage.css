@@ -428,6 +428,11 @@
     height: 432px;
   }
 
+  /* Add to Basket Button on top of the cards */
+  .popular-produce-shopping-button {
+    width: 30%;
+  }
+
   /* Product Type and Price */
   .popular-produce-type-and-price {
     margin-top: 28px;
