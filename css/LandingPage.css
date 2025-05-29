@@ -1,6 +1,8 @@
 /* ===== All CSS Specified for the Landing Page ===== */
 
 /* ===== Top Section - Image with text ===== */
+
+/* Top section, with an background image taking 100% of the screen when user enters the page */
 .top-background-section {
   position: relative;
   width: 100%;
@@ -10,35 +12,42 @@
   background-image: url("../assets/landingPage/main-background.avif");
 }
 
+/* The FRAM Text (logo) on the background image */
 .top-logo {
   position: absolute;
-  top: 35%;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 3em;
+  font-size: 75px;
   letter-spacing: 3px;
   margin: 0;
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 300;
 }
 
+/* An Vertical Line that goes between title and sub text on background image */
 .top-underline {
   position: absolute;
-  top: 44%;
+  top: 22%;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 200px;
+  height: 460px;
   background-color: white;
 }
 
+/* Sub text on the background image */
 .top-subheading {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 78%;
+  left: 53%;
   transform: translateX(-50%);
   color: white;
-  font-size: 1.2em;
+  font-size: 24px;
   margin: 0;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
 }
 
 /* ===== Produce and Chatbot Section ===== */
@@ -181,6 +190,35 @@
 
 /* ===== Desktop Styles: When the screen is 1024px or larger ===== */
 @media (min-width: 1024px) {
+  /* ===== Top Section ===== */
+
+  /* Top text (logo), placed abit further down on desktop */
+  .top-logo {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 200px;
+  }
+
+  /* The Vertical line that goes between logo and sub text, shorter on desktop */
+  .top-underline {
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+    background-color: white;
+  }
+
+  /* Sub text on the background image */
+  .top-subheading {
+    top: 82%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
   /* ===== Produce and Chat Section ===== */
   .produce-chat-container {
     flex-direction: row;
