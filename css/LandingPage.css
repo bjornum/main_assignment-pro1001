@@ -181,6 +181,7 @@
   height: 16px;
 }
 
+/* To wrap the cards in flex, and customise it for Mobile*/
 .popular-produce-card-container {
   display: flex;
   overflow: hidden;
@@ -376,6 +377,21 @@
   }
 
   /* ===== Popular Produce Section ===== */
+
+  /* General spacing, to fit the design*/
+  .popular-produce-section-spacing {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 90px;
+  }
+
+  /* Main title of the Popular Produce Section */
+  .popular-produce-title {
+    font-size: 36px;
+    margin-left: 30px;
+    margin-bottom: 45px;
+  }
+
   /* To remove extra padding and margin*/
   section {
     padding: 0;
@@ -387,13 +403,15 @@
     display: none;
   }
 
+  /* To wrap the cards in flex, and customise it for Desktop */
   .popular-produce-card-container {
-    display: flex;
     justify-content: start;
     width: 100%;
     box-sizing: border-box;
+    gap: 29px;
   }
 
+  /* Each of the cards in the popular produce section */
   .popular-produce-card {
     padding: 0;
     min-width: 455px;
@@ -404,23 +422,22 @@
     overflow: hidden;
   }
 
+  /* Scaled up produce image for phone */
   .popular-produce-card img {
     width: 455px;
     height: 432px;
-    border-radius: 8px;
-    object-fit: cover;
   }
 
+  /* Product Type and Price */
   .popular-produce-type-and-price {
-    margin-top: 18px;
+    margin-top: 28px;
     display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
+    font-size: 20px;
   }
 
+  /* Slight Adjustment on desktop weight compared to Mobile */
   .popular-produce-weight {
     margin-top: 12px;
-    text-align: left;
-    font-size: 0.9rem;
+    font-size: 20px;
   }
 }

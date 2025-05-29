@@ -220,7 +220,7 @@
         </div>
       </section>
 
-      <!-- Popular Produce Section -->
+      <!-- Popular Produce Section - Mobile Carousel -->
       <section class="on-mobile-only margin-bottom-90">
         <h2 class="popular-produce-title">Popular produce</h2>
         <!-- Mobile Carousel Cards -->
@@ -336,93 +336,96 @@
       </section>
 
       <!-- Produce Cards Section Desktop -->
-      <section class="popular-produce-cards on-desktop-only">
-        <!--Card 1-->
-        <div class="produce-card on-desktop-only">
-          <img src="../assets/productPage/Oats.avif" alt="Zoom in on several grains of oats" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Oats')"
-            aria-label="Add Oats to the basket"
-          >
-            <span> Add to basket </span>
-            <span class="popular-produce-shopping-button-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="size-6"
-                style="width: 16px; height: 16px"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-              </svg>
-            </span>
-          </button>
-          <p class="display-flex popular-produce-type-and-price large-body">
-            <span>Oats</span>
-            <span>16 kr / kg</span>
-          </p>
-          <p class="popular-produce-weight">1 kg</p>
-        </div>
-        <!--Card 2-->
-        <div class="produce-card on-desktop-only">
-          <img src="../assets/productPage/Red Onions.avif" alt="Zoomed in on a cluster of red onions" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Red Onions')"
-            aria-label="Add Red Onions to the basket"
-          >
-            <span> Add to basket </span>
-            <span class="popular-produce-shopping-button-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="size-6"
-                style="width: 16px; height: 16px"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-              </svg>
-            </span>
-          </button>
-          <p class="display-flex popular-produce-type-and-price large-body">
-            <span>Red Onions</span>
-            <span>45 kr / kg</span>
-          </p>
-          <p class="popular-produce-weight">0.5 kg</p>
-        </div>
-        <!--Card 3-->
-        <div class="produce-card on-desktop-only">
-          <img src="../assets/productPage/Garlic.avif" alt="Zoom in on a cluster of Garlic laying around" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Garlic')"
-            aria-label="Add Garlic to the basket"
-          >
-            <span> Add to basket </span>
-            <span class="popular-produce-shopping-button-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="size-6"
-                style="width: 16px; height: 16px"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-              </svg>
-            </span>
-          </button>
-          <p class="display-flex popular-produce-type-and-price large-body">
-            <span>Garlic</span>
-            <span>38 kr</span>
-          </p>
-          <p class="popular-produce-weight">0.2 kg</p>
+      <section class="on-desktop-only popular-produce-section-spacing">
+        <h2 class="popular-produce-title">Popular produce</h2>
+        <div class="popular-produce-card-container">
+          <!--Card 1-->
+          <div class="popular-produce-card on-desktop-only">
+            <img src="../assets/productPage/Oats.avif" alt="Zoom in on several grains of oats" />
+            <button
+              class="add-cursor-pointer popular-produce-shopping-button"
+              onclick="addToCart('Oats')"
+              aria-label="Add Oats to the basket"
+            >
+              <span> Add to basket </span>
+              <span class="popular-produce-shopping-button-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="size-6"
+                  style="width: 16px; height: 16px"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                </svg>
+              </span>
+            </button>
+            <p class="display-flex popular-produce-type-and-price large-body">
+              <span>Oats</span>
+              <span>16 kr / kg</span>
+            </p>
+            <p class="popular-produce-weight">1 kg</p>
+          </div>
+          <!--Card 2-->
+          <div class="popular-produce-card on-desktop-only">
+            <img src="../assets/productPage/Red Onions.avif" alt="Zoomed in on a cluster of red onions" />
+            <button
+              class="add-cursor-pointer popular-produce-shopping-button"
+              onclick="addToCart('Red Onions')"
+              aria-label="Add Red Onions to the basket"
+            >
+              <span> Add to basket </span>
+              <span class="popular-produce-shopping-button-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="size-6"
+                  style="width: 16px; height: 16px"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                </svg>
+              </span>
+            </button>
+            <p class="display-flex popular-produce-type-and-price large-body">
+              <span>Red Onions</span>
+              <span>45 kr / kg</span>
+            </p>
+            <p class="popular-produce-weight">0.5 kg</p>
+          </div>
+          <!--Card 3-->
+          <div class="popular-produce-card on-desktop-only">
+            <img src="../assets/productPage/Garlic.avif" alt="Zoom in on a cluster of Garlic laying around" />
+            <button
+              class="add-cursor-pointer popular-produce-shopping-button"
+              onclick="addToCart('Garlic')"
+              aria-label="Add Garlic to the basket"
+            >
+              <span> Add to basket </span>
+              <span class="popular-produce-shopping-button-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="size-6"
+                  style="width: 16px; height: 16px"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                </svg>
+              </span>
+            </button>
+            <p class="display-flex popular-produce-type-and-price large-body">
+              <span>Garlic</span>
+              <span>38 kr</span>
+            </p>
+            <p class="popular-produce-weight">0.2 kg</p>
+          </div>
         </div>
       </section>
       <!-- Newsletter Section -->
