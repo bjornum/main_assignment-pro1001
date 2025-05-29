@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produce</title>
-    <link rel="stylesheet" href="../css/global.css" />
+    <title>Products</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Arimo:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="../css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="../css/Global.css" /></noscript>
     <link rel="stylesheet" href="../css/productPage.css" />
     <link rel="stylesheet" href="../css/Navbar.css" />
     <link rel="stylesheet" href="../css/Newsletter.css" />
     <link rel="stylesheet" href="../css/Feedback.css" />
     <!-- Leaflet CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      crossorigin=""
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   </head>
   <body class="primary-background-color">
     <!-- Navbar -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header-left">
         <button class="hamburger-menu-button" aria-label="Open side menu">
           <svg
@@ -29,11 +30,7 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
       </div>
@@ -53,30 +50,33 @@
       </div>
     </header>
     <!-- Side Menu -->
-    <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">
-        &times;
-      </button>
-      <nav class="menu-content">
+    <aside id="side-menu" class="side-menu">
+      <div class="display-flex center-items">
+        <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+        <a href="/index.html" class="header-link side-menu-title on-mobile-only">
+          <h1 class="header-title">FRAM</h1>
+        </a>
+      </div>
+      <div class="side-menu-border"></div>
+      <nav class="menu-content" role="navigation">
         <ul class="menu-items large-body">
-          <li><a href="/pages/product.html">Products</a></li>
-          <li><a href="/pages/chatbot.html">Chat</a></li>
+          <li><a href="/pages/product.html" aria-label="Go to product page">Products</a></li>
+          <li><a href="/pages/chatbot.html" aria-label="Go to the chatbot">Chat</a></li>
         </ul>
         <div class="menu-footer">
-          <a href="/pages/checkout.html">Checkout</a>
+          <a href="/pages/checkout.html" aria-label="Go to checkout page">Checkout</a>
         </div>
       </nav>
-    </div>
+    </aside>
     <!-- Main content -->
     <main>
       <!-- Intro Section -->
       <section style="margin-top: 70px">
         <h2 class="sub-header produce-intro-title">Produce</h2>
         <p class="produce-into-text">
-          Explore our selection of seasonal produce, sourced directly from local
-          farms to ensure peak freshness and quality. Every item is chosen with
-          care, supporting sustainable practices and bringing the best of the
-          harvest to your table.
+          Explore our selection of seasonal produce, sourced directly from local farms to ensure peak freshness and
+          quality. Every item is chosen with care, supporting sustainable practices and bringing the best of the harvest
+          to your table.
         </p>
       </section>
       <!-- Produce Cards Section -->
@@ -84,10 +84,7 @@
         <!--Card 1-->
         <div class="produce-card">
           <img src="../assets/productPage/Oats.avif" alt="" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Oats')"
-          >
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Oats')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -99,11 +96,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -116,10 +109,7 @@
         <!--Card 2-->
         <div class="produce-card">
           <img src="../assets/productPage/Red Onions.avif" alt="" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Red Onions')"
-          >
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Red Onions')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -131,11 +121,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -148,10 +134,7 @@
         <!--Card 3-->
         <div class="produce-card">
           <img src="../assets/productPage/Garlic.avif" alt="" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Garlic')"
-          >
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Garlic')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -163,11 +146,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -180,10 +159,7 @@
         <!--Card 4-->
         <div class="produce-card">
           <img src="../assets/productPage/Potatoes.avif" alt="" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Potatoes')"
-          >
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Potatoes')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -195,11 +171,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -212,10 +184,7 @@
         <!--Card 5-->
         <div class="produce-card">
           <img src="../assets/productPage/Carrots.avif" alt="" />
-          <button
-            class="add-cursor-pointer popular-produce-shopping-button"
-            onclick="addToCart('Carrots')"
-          >
+          <button class="add-cursor-pointer popular-produce-shopping-button" onclick="addToCart('Carrots')">
             <span> Add to basket </span>
             <span class="popular-produce-shopping-button-icon">
               <svg
@@ -227,11 +196,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -246,12 +211,7 @@
       <section class="partnering-farms-wrapper">
         <!-- Intro section to partner maps -->
         <section class="partnering-farms-text">
-          <h2
-            class="sub-header"
-            style="padding-bottom: 45px; padding-top: 45px"
-          >
-            See our partnering farms
-          </h2>
+          <h2 class="sub-header" style="padding-bottom: 45px; padding-top: 45px">See our partnering farms</h2>
         </section>
 
         <!-- Farmers Map -->
@@ -271,10 +231,7 @@
     </main>
 
     <!-- Leaflet JavaScript -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      crossorigin=""
-    ></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <script src="../js/farmer-map.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/product-handling.js"></script>

@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla AI Chatbot</title>
-    <link rel="stylesheet" href="../css/Global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Arimo:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="../css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="../css/Global.css" /></noscript>
     <link rel="stylesheet" href="../css/Navbar.css" />
     <link rel="stylesheet" href="../css/chatbot.css" />
   </head>
   <body class="chatbot-body">
     <!-- Navbar -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header-left">
         <button class="hamburger-menu-button" aria-label="Open side menu">
           <svg
@@ -21,11 +26,7 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
       </div>
@@ -45,30 +46,30 @@
       </div>
     </header>
     <!-- Side Menu -->
-    <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">
-        &times;
-      </button>
-      <nav class="menu-content">
+    <aside id="side-menu" class="side-menu">
+      <div class="display-flex center-items">
+        <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+        <a href="/index.html" class="header-link side-menu-title on-mobile-only">
+          <h1 class="header-title">FRAM</h1>
+        </a>
+      </div>
+      <div class="side-menu-border"></div>
+      <nav class="menu-content" role="navigation">
         <ul class="menu-items large-body">
-          <li><a href="/pages/product.html">Products</a></li>
-          <li><a href="/pages/chatbot.html">Chat</a></li>
+          <li><a href="/pages/product.html" aria-label="Go to product page">Products</a></li>
+          <li><a href="/pages/chatbot.html" aria-label="Go to the chatbot">Chat</a></li>
         </ul>
         <div class="menu-footer">
-          <a href="/pages/checkout.html">Checkout</a>
+          <a href="/pages/checkout.html" aria-label="Go to checkout page">Checkout</a>
         </div>
       </nav>
-    </div>
+    </aside>
+    <!-- Main content -->
     <main id="chatbox-container" class="chatbot-messages-container">
       <!-- Messages will happen inside here :) -->
       <section id="messages" class="chatbot-messages"></section>
       <!-- Loader when asking The AI -->
-      <div
-        role="status"
-        aria-live="polite"
-        id="typing-indicator"
-        class="typing-indicator default-hidden"
-      >
+      <div role="status" aria-live="polite" id="typing-indicator" class="typing-indicator default-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -84,21 +85,11 @@
           />
         </svg>
       </div>
-      <div
-        role="alert"
-        id="error-message"
-        class="default-hidden error-message-container"
-      >
-        <p id="error-text" class="no-margin">
-          Failed to connect. Wait and try again later
-        </p>
+      <div role="alert" id="error-message" class="default-hidden error-message-container">
+        <p id="error-text" class="no-margin">Failed to connect. Wait and try again later</p>
       </div>
       <!-- Writing the messages to the AI here -->
-      <form
-        id="chat-form"
-        class="chatbot-input-area"
-        aria-label="Chat input area"
-      >
+      <form id="chat-form" class="chatbot-input-area" aria-label="Chat input area">
         <label for="userInput" class="visually-hidden">Your message</label>
         <textarea
           id="userInput"
@@ -107,12 +98,7 @@
           class="chatbot-input"
           rows="2"
         ></textarea>
-        <button
-          id="sendBtn"
-          type="submit"
-          class="chatbot-send-button"
-          aria-label="Send message"
-        >
+        <button id="sendBtn" type="submit" class="chatbot-send-button" aria-label="Send message">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -121,18 +107,13 @@
             stroke="currentColor"
             class="chatbot-send-button-icon"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
           </svg>
         </button>
       </form>
       <section style="padding: 10px">
         <small class="chatbot-input-instructions">
-          <strong>Note:</strong> Pressing enter will submit the message, and
-          shift + enter will go to next line
+          <strong>Note:</strong> Pressing enter will submit the message, and shift + enter will go to next line
         </small>
       </section>
     </main>

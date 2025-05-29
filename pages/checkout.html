@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Arimo:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="../css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="../css/Global.css" /></noscript>
     <link rel="stylesheet" href="../css/Navbar.css" />
     <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/Feedback.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header-left">
         <button class="hamburger-menu-button" aria-label="Open side menu">
           <svg
@@ -22,11 +27,7 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
       </div>
@@ -46,29 +47,31 @@
       </div>
     </header>
     <!-- Side Menu -->
-    <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">
-        &times;
-      </button>
-      <nav class="menu-content">
+    <aside id="side-menu" class="side-menu">
+      <div class="display-flex center-items">
+        <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+        <a href="/index.html" class="header-link side-menu-title on-mobile-only">
+          <h1 class="header-title">FRAM</h1>
+        </a>
+      </div>
+      <div class="side-menu-border"></div>
+      <nav class="menu-content" role="navigation">
         <ul class="menu-items large-body">
-          <li><a href="/pages/product.html">Products</a></li>
-          <li><a href="/pages/chatbot.html">Chat</a></li>
+          <li><a href="/pages/product.html" aria-label="Go to product page">Products</a></li>
+          <li><a href="/pages/chatbot.html" aria-label="Go to the chatbot">Chat</a></li>
         </ul>
         <div class="menu-footer">
-          <a href="/pages/checkout.html">Checkout</a>
+          <a href="/pages/checkout.html" aria-label="Go to checkout page">Checkout</a>
         </div>
       </nav>
-    </div>
+    </aside>
     <h1 style="margin-top: 50px">Checkout</h1>
 
     <!-- Total Checkout, and checkout button -->
     <section>
       <div class="checkout-total" id="checkout-total">
         <p id="total-price">Total: 0 kr</p>
-        <button id="checkout-button" class="green-button" onclick="checkout()">
-          Checkout
-        </button>
+        <button id="checkout-button" class="green-button" onclick="checkout()">Checkout</button>
       </div>
     </section>
 
