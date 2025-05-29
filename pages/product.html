@@ -17,7 +17,7 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   </head>
-  <body class="primary-background-color">
+  <body class="">
     <!-- Navbar -->
     <header class="header" role="banner">
       <div class="header-left">
@@ -68,15 +68,25 @@
         </div>
       </nav>
     </aside>
+
     <!-- Main content -->
-    <main>
+    <main class="space-from-navbar primary-background-color">
       <!-- Intro Section -->
-      <section style="margin-top: 70px">
-        <h2 class="sub-header produce-intro-title">Produce</h2>
-        <p class="produce-into-text">
-          Explore our selection of seasonal produce, sourced directly from local farms to ensure peak freshness and
-          quality. Every item is chosen with care, supporting sustainable practices and bringing the best of the harvest
-          to your table.
+      <section>
+        <h2 class="produce-intro-title">Produce</h2>
+        <p class="produce-intro-text on-mobile-only">
+          Explore our selection of seasonal produce, <br />
+          sourced directly from local farms to ensure <br />
+          peak freshness and quality. Every item is <br />
+          chosen with care, supporting sustainable <br />
+          practices and bringing the best of the <br />
+          harvest to your table.
+        </p>
+        <p class="produce-intro-text on-desktop-only">
+          Explore our selection of seasonal produce, sourced directly from <br />
+          local farms to ensure peak freshness and quality. Every item is <br />
+          chosen with care, supporting sustainable practices and bringing <br />
+          the best of the harvest to your table.
         </p>
       </section>
       <!-- Produce Cards Section -->
