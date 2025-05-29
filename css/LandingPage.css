@@ -98,12 +98,32 @@
 }
 
 /* ===== Info Section (This is how it works section) ===== */
-.info-title {
+
+/* Positioning and spacing of the main header */
+.info-header {
   justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 45px;
 }
 
-.info-link {
-  color: darkslategray;
+/* Title named: This is how it works */
+.info-title {
+  font-size: 24px;
+  font-family: "Arimo", sans-serif;
+  text-transform: uppercase;
+}
+
+/* For each of the headers in the other cards */
+.info-sub-header {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  font-family: "Arimo", sans-serif;
+}
+
+/* Due to how link can argue, this one is placed on element above to push it slightly down */
+.info-link-spacer {
+  margin-bottom: 24px;
 }
 
 .info-section {
@@ -112,15 +132,6 @@
 
 .info-steps {
   flex-direction: column;
-}
-
-.info-header {
-  padding-top: 90px;
-  padding-bottom: 45px;
-}
-
-.info-sub-header {
-  text-align: center;
 }
 
 /* ===== Popular Produce Section ===== */
@@ -291,14 +302,27 @@
     height: 785px;
   }
 
-  .info-title {
+  .info-header {
+    padding-top: 0;
+    padding-bottom: 0;
     flex: 1;
     max-width: 33%;
     height: 100%;
   }
 
-  .info-title .header {
+  .info-title {
     font-size: 2rem;
+  }
+
+  /* For each of the headers in the other cards */
+  .info-sub-header {
+    font-size: 20px;
+    width: 278px;
+    margin: 0;
+    font-size: 20px;
+    flex-shrink: 0;
+    text-align: left;
+    padding-bottom: 0px;
   }
 
   .info-steps {
@@ -314,19 +338,7 @@
     padding-right: 20px;
     position: relative;
     display: flex;
-  }
-
-  .info-header {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .info-sub-header {
-    width: 278px;
-    margin: 0;
-    font-size: 1.2rem;
-    flex-shrink: 0;
-    text-align: left;
+    align-items: center;
   }
 
   .info-content {
