@@ -7,29 +7,33 @@ let currentIndex = 0;
 
 // Updates the carousel position
 const updateCarousel = () => {
-  const cardWidth = container.querySelector(
-    ".popular-produce-card"
-  ).offsetWidth; // Get the exact width of one card
+  // Get the exact width of one card
+  const cardWidth = container.querySelector(".popular-produce-card").offsetWidth;
   container.scrollTo({
     left: currentIndex * cardWidth,
     behavior: "smooth",
   });
 };
 
-// Event listeners for the scroll buttons
+/* "Scrolls" to the previous card */
 scrollLeftButton.addEventListener("click", () => {
-  const totalCards = container.querySelectorAll(".popular-produce-card").length; // Total number of cards
-  currentIndex = (currentIndex - 1 + totalCards) % totalCards; // Move to the previous card
+  // Total number of cards
+  const totalCards = container.querySelectorAll(".popular-produce-card").length;
+  // Move to the previous card
+  currentIndex = (currentIndex - 1 + totalCards) % totalCards;
   updateCarousel();
 });
 
+/* "scrolls" to the right card */
 scrollRightButton.addEventListener("click", () => {
-  const totalCards = container.querySelectorAll(".popular-produce-card").length; // Total number of cards
-  currentIndex = (currentIndex + 1) % totalCards; // Move to the next card
+  // Total number of cards
+  const totalCards = container.querySelectorAll(".popular-produce-card").length;
+  // Move to the next card
+  currentIndex = (currentIndex + 1) % totalCards;
   updateCarousel();
 });
 
-// Ensure the carousel works only on mobile
+// Ensure the carousel works only on mobile and initializes correctly
 if (window.innerWidth < 1024) {
-  updateCarousel(); // Initialize the carousel position
+  updateCarousel();
 }

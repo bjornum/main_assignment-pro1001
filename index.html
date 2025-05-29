@@ -177,7 +177,7 @@
         <!-- Left Side: Steps -->
         <div class="info-steps display-flex general-border">
           <!-- Each step block -->
-          <section class="info-step padding-45 general-border">
+          <div class="info-step padding-45 general-border">
             <h3 class="info-sub-header">Order Groceries</h3>
             <div class="info-content">
               <p class="info-link-spacer">
@@ -186,9 +186,9 @@
               </p>
               <a class="greyed-text" href="./pages/products.html">See our stock here</a>
             </div>
-          </section>
+          </div>
 
-          <section class="info-step center-items padding-45 general-border">
+          <div class="info-step center-items padding-45 general-border">
             <h3 class="info-sub-header">Stock up</h3>
             <div class="info-content">
               <p>
@@ -196,9 +196,9 @@
                 containers - they are yours to keep until your next order.
               </p>
             </div>
-          </section>
+          </div>
 
-          <section class="info-step center-items padding-45 general-border">
+          <div class="info-step center-items padding-45 general-border">
             <h3 class="info-sub-header">Scan & reuse</h3>
             <div class="info-content">
               <p>
@@ -206,9 +206,9 @@
                 phone's camera. This instantly adds the items back to your cart, making reordering a breeze.
               </p>
             </div>
-          </section>
+          </div>
 
-          <section class="info-step center-items padding-45 general-border">
+          <div class="info-step center-items padding-45 general-border">
             <h3 class="info-sub-header">Swap & reuse</h3>
             <div class="info-content">
               <p>
@@ -216,14 +216,16 @@
                 them thoroughly and reuse them for future deliveries.
               </p>
             </div>
-          </section>
+          </div>
         </div>
       </section>
 
       <!-- Popular Produce Section -->
-      <section style="margin-bottom: 90px" class="on-mobile-only">
-        <h2 class="center-text" style="margin-top: 90px; margin-bottom: 30px">Popular produce</h2>
+      <section class="on-mobile-only margin-bottom-90">
+        <h2 class="popular-produce-title">Popular produce</h2>
+        <!-- Mobile Carousel Cards -->
         <div class="popular-produce-card-container">
+          <!-- Oats Card -->
           <article class="popular-produce-card" aria-labelledby="product-oats">
             <img
               src="./assets/productPage/Oats.avif"
@@ -245,8 +247,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="white"
-                  class="size-6"
-                  style="width: 16px; height: 16px"
+                  class="popular-produce-shopping-button-svg"
                 >
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                 </svg>
@@ -258,6 +259,8 @@
             </p>
             <p class="popular-produce-weight">1 kg</p>
           </article>
+
+          <!-- Red Onion Card -->
           <article class="popular-produce-card" aria-labelledby="product-red-onions">
             <img
               src="./assets/productPage/Red Onions.avif"
@@ -278,8 +281,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="white"
-                  class="size-6"
-                  style="width: 16px; height: 16px"
+                  class="popular-produce-shopping-button-svg"
                 >
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                 </svg>
@@ -291,6 +293,8 @@
             </p>
             <p class="popular-produce-weight">1 kg</p>
           </article>
+
+          <!-- Potato Card -->
           <article class="popular-produce-card" aria-labelledby="product-potatoes">
             <img
               src="./assets/productPage/Potatoes.avif"
@@ -311,8 +315,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="white"
-                  class="size-6"
-                  style="width: 16px; height: 16px"
+                  class="popular-produce-shopping-button-svg"
                 >
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                 </svg>
@@ -325,14 +328,15 @@
             <p class="popular-produce-weight">1 kg</p>
           </article>
         </div>
+        <!-- Navigation buttons for scrolling -->
         <div class="popular-produce-navigation-button-container">
           <button id="scroll-left" aria-label="Scroll left through products">◀</button>
           <button id="scroll-right" aria-label="Scroll right through products">▶</button>
         </div>
       </section>
 
-      <!-- Produce Cards Section -->
-      <section class="produce-cards">
+      <!-- Produce Cards Section Desktop -->
+      <section class="popular-produce-cards on-desktop-only">
         <!--Card 1-->
         <div class="produce-card on-desktop-only">
           <img src="../assets/productPage/Oats.avif" alt="Zoom in on several grains of oats" />

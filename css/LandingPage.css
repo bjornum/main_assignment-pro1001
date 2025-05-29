@@ -126,76 +126,105 @@
   margin-bottom: 24px;
 }
 
+/* Makes the info section stack on top of each other */
 .info-section {
   flex-direction: column;
 }
 
+/* Each of the cards in the info section */
 .info-steps {
   flex-direction: column;
 }
 
 /* ===== Popular Produce Section ===== */
+
+/* Main title of the Popular Produce Section */
+.popular-produce-title {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-left: 45px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+/* Add to Basket Button on top of the cards */
 .popular-produce-shopping-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20px;
-  width: 60%;
+  height: 35px;
+  width: 50%;
   background-color: black;
-  color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 0.8rem;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #e1eaf0;
   cursor: pointer;
-  margin: -30px 10px 0 auto;
+  margin: -50px 20px 0 auto;
   z-index: 10;
   position: relative;
+  font-family: "Arimo", sans-serif;
 }
 
+/* Placement of the add to cart icon */
 .popular-produce-shopping-button-icon {
   margin-left: 5px;
   display: flex;
   align-items: center;
 }
 
+/* Setting a size of the svg icon, due to the inate class from heroicons not working (tailwind class i belive?) */
+.popular-produce-shopping-button-svg {
+  width: 16px;
+  height: 16px;
+}
+
 .popular-produce-card-container {
   display: flex;
   overflow: hidden;
   scroll-behavior: smooth;
-  gap: 16px;
-  padding: 0 16px;
+  padding: 0px 30px;
 }
 
 .popular-produce-card {
   flex: 0 0 calc(100% - 32px);
   max-width: 300px;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 0px 15px;
   text-align: center;
   box-sizing: border-box;
-  background-color: #fff;
 }
 
+/* Image inside the card, with a set width and height to ensure it fits nicely by design given */
 .popular-produce-card img {
-  width: 100%;
-  height: 200px;
+  width: 270px;
+  height: 327px;
   border-radius: 8px;
   object-fit: cover;
 }
 
+/* Type and price of the product, displayed below the image
+  - Slight larger margin top, due to how it scales into the card itself 
+  - Scaled the image to 270, hence able to take 10px of margin on either side to remake the design
+*/
 .popular-produce-type-and-price {
-  margin-top: 18px;
+  margin-top: 28px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 14px;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .popular-produce-weight {
   margin-top: 5px;
   text-align: left;
-  font-size: 0.9rem;
-  margin-left: 0;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #5a5d5f;
 }
 
 .popular-produce-navigation-button-container {
