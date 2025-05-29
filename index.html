@@ -16,12 +16,7 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <!-- <link rel="stylesheet" href="./css/Global.css" /> -->
-    <link
-      rel="preload"
-      href="./css/Global.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
+    <link rel="preload" href="./css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="./css/Global.css" /></noscript>
     <link rel="stylesheet" href="./css/LandingPage.css" />
     <link rel="stylesheet" href="./css/Navbar.css" />
@@ -42,11 +37,7 @@
             stroke="black"
             class="hamburger-menu-icon"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
       </div>
@@ -67,9 +58,11 @@
     </header>
     <!-- Side Menu -->
     <div id="side-menu" class="side-menu">
-      <button class="close-menu-button" aria-label="Close side menu">
-        &times;
-      </button>
+      <div class="display-flex center-items">
+        <button class="close-menu-button" aria-label="Close side menu">&times;</button>
+        <h2 class="on-mobile-only side-menu-title header-title">FRAM</h2>
+      </div>
+      <div class="side-menu-border"></div>
       <nav class="menu-content">
         <ul class="menu-items large-body">
           <li><a href="/pages/product.html">Products</a></li>
@@ -95,25 +88,16 @@
       </section>
       <small class="image-credit">
         <span> Photo by </span>
-        <a href="https://unsplash.com/@markusspiske" target="_blank"
-          >Markus Spiske</a
-        >
+        <a href="https://unsplash.com/@markusspiske" target="_blank"> Markus Spiske </a>
         <span>on Unsplash</span>
       </small>
 
       <!-- Produce Section -->
       <section class="produce-chat-container display-flex">
         <!-- Produce Section -->
-        <article
-          aria-labelledby="shop-heading"
-          class="produce-chat-card center-items center-text"
-        >
-          <h2 id="shop-heading" class="no-margin padding-top-90">
-            Shop our seasonal selection
-          </h2>
-          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
-            Updated every week
-          </p>
+        <article aria-labelledby="shop-heading" class="produce-chat-card center-items center-text">
+          <h2 id="shop-heading" class="no-margin padding-top-90">Shop our seasonal selection</h2>
+          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">Updated every week</p>
           <img
             src="./assets/landingPage/produce.avif"
             alt="Basket filled with fresh vegetables including tomatoes, zucchini, green beans, and leafy greens"
@@ -121,19 +105,11 @@
           />
           <small class="image-credit">
             <span> Photo by </span>
-            <a href="https://unsplash.com/@ninaluong" target="_blank"
-              >Nina Luong</a
-            >
+            <a href="https://unsplash.com/@ninaluong" target="_blank">Nina Luong</a>
             <span>on Unsplash</span>
           </small>
-          <p>
-            New produce is added continuously as time goes by and the seasons
-            change.
-          </p>
-          <a
-            href="/pages/product.html"
-            class="primary-button produce-full-width-button margin-top-45"
-          >
+          <p>New produce is added continuously as time goes by and the seasons change.</p>
+          <a href="/pages/product.html" class="primary-button produce-full-width-button margin-top-45">
             Browse our selection
           </a>
         </article>
@@ -144,12 +120,8 @@
           class="produce-chat-card center-items center-text"
           style="margin-bottom: 90px"
         >
-          <h2 id="chat-heading" class="no-margin padding-top-90">
-            Ask us about anything
-          </h2>
-          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">
-            All your questions answered
-          </p>
+          <h2 id="chat-heading" class="no-margin padding-top-90">Ask us about anything</h2>
+          <p style="padding-top: 8px; line-height: 1.2" class="no-margin">All your questions answered</p>
           <img
             src="./assets/landingPage/chat.avif"
             alt="Man on a green field, pointing to the distance."
@@ -157,30 +129,18 @@
           />
           <small class="image-credit">
             <span> Photo by </span>
-            <a href="https://unsplash.com/@rebeccaritchie" target="_blank"
-              >Rebecca Ritchie</a
-            >
+            <a href="https://unsplash.com/@rebeccaritchie" target="_blank">Rebecca Ritchie</a>
             <span>on Unsplash</span>
           </small>
-          <p>
-            New produce is added continuously as time goes by and the seasons
-            change.
-          </p>
-          <a
-            href="/pages/chatbot.html"
-            class="primary-button produce-full-width-button margin-top-45"
-          >
-            Go to chat
-          </a>
+          <p>New produce is added continuously as time goes by and the seasons change.</p>
+          <a href="/pages/chatbot.html" class="primary-button produce-full-width-button margin-top-45"> Go to chat </a>
         </article>
       </section>
 
       <!-- Info Sections  -->
       <section class="info-section primary-background-color display-flex">
         <!-- Right Side: Title -->
-        <section
-          class="info-title display-flex center-items center-text general-border"
-        >
+        <section class="info-title display-flex center-items center-text general-border">
           <h2 class="info-header">This is how it works</h2>
         </section>
 
@@ -191,13 +151,10 @@
             <h3 class="info-sub-header">Order Groceries</h3>
             <div class="info-content">
               <p>
-                Fram is a circular service that ensures your kitchen is always
-                stocked with the essentials you need. Browse our seasonal
-                selection, choose your items and place your order online.
+                Fram is a circular service that ensures your kitchen is always stocked with the essentials you need.
+                Browse our seasonal selection, choose your items and place your order online.
               </p>
-              <a class="info-link" href="./pages/products.html"
-                >See our stock here</a
-              >
+              <a class="info-link" href="./pages/products.html">See our stock here</a>
             </div>
           </section>
 
@@ -205,9 +162,8 @@
             <h3 class="info-sub-header">Stock up</h3>
             <div class="info-content">
               <p>
-                Once your order arrives, unpack the produce and store it however
-                it works best for you. Hold onto the containers - they are yours
-                to keep until your next order.
+                Once your order arrives, unpack the produce and store it however it works best for you. Hold onto the
+                containers - they are yours to keep until your next order.
               </p>
             </div>
           </section>
@@ -216,10 +172,8 @@
             <h3 class="info-sub-header">Scan & reuse</h3>
             <div class="info-content">
               <p>
-                Ready for a refill? Grab the containers from your last order and
-                scan the QR code with our app or your phone's camera. This
-                instantly adds the items back to your cart, making reordering a
-                breeze.
+                Ready for a refill? Grab the containers from your last order and scan the QR code with our app or your
+                phone's camera. This instantly adds the items back to your cart, making reordering a breeze.
               </p>
             </div>
           </section>
@@ -228,9 +182,8 @@
             <h3 class="info-sub-header">Swap & reuse</h3>
             <div class="info-content">
               <p>
-                When we deliver your new order, simply leave your empty
-                containers outside. We'll pick them up, clean them thoroughly
-                and reuse them for future deliveries.
+                When we deliver your new order, simply leave your empty containers outside. We'll pick them up, clean
+                them thoroughly and reuse them for future deliveries.
               </p>
             </div>
           </section>
@@ -239,9 +192,7 @@
 
       <!-- Popular Produce Section -->
       <section style="margin-bottom: 90px" class="on-mobile-only">
-        <h2 class="center-text" style="margin-top: 90px; margin-bottom: 30px">
-          Popular produce
-        </h2>
+        <h2 class="center-text" style="margin-top: 90px; margin-bottom: 30px">Popular produce</h2>
         <div class="popular-produce-card-container">
           <article class="popular-produce-card" aria-labelledby="product-oats">
             <img
@@ -267,11 +218,7 @@
                   class="size-6"
                   style="width: 16px; height: 16px"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                  />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                 </svg>
               </span>
             </button>
@@ -281,10 +228,7 @@
             </p>
             <p class="popular-produce-weight">1 kg</p>
           </article>
-          <article
-            class="popular-produce-card"
-            aria-labelledby="product-red-onions"
-          >
+          <article class="popular-produce-card" aria-labelledby="product-red-onions">
             <img
               src="./assets/productPage/Red Onions.avif"
               alt="Zoom in on a cluster of Red Onions"
@@ -307,11 +251,7 @@
                   class="size-6"
                   style="width: 16px; height: 16px"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                  />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                 </svg>
               </span>
             </button>
@@ -321,10 +261,7 @@
             </p>
             <p class="popular-produce-weight">1 kg</p>
           </article>
-          <article
-            class="popular-produce-card"
-            aria-labelledby="product-potatoes"
-          >
+          <article class="popular-produce-card" aria-labelledby="product-potatoes">
             <img
               src="./assets/productPage/Potatoes.avif"
               alt="Alot of potatoes mixed together"
@@ -347,11 +284,7 @@
                   class="size-6"
                   style="width: 16px; height: 16px"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                  />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
                 </svg>
               </span>
             </button>
@@ -363,12 +296,8 @@
           </article>
         </div>
         <div class="popular-produce-navigation-button-container">
-          <button id="scroll-left" aria-label="Scroll left through products">
-            ◀
-          </button>
-          <button id="scroll-right" aria-label="Scroll right through products">
-            ▶
-          </button>
+          <button id="scroll-left" aria-label="Scroll left through products">◀</button>
+          <button id="scroll-right" aria-label="Scroll right through products">▶</button>
         </div>
       </section>
 
@@ -376,10 +305,7 @@
       <section class="produce-cards">
         <!--Card 1-->
         <div class="produce-card on-desktop-only">
-          <img
-            src="../assets/productPage/Oats.avif"
-            alt="Zoom in on several grains of oats"
-          />
+          <img src="../assets/productPage/Oats.avif" alt="Zoom in on several grains of oats" />
           <button
             class="add-cursor-pointer popular-produce-shopping-button"
             onclick="addToCart('Oats')"
@@ -396,11 +322,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -412,10 +334,7 @@
         </div>
         <!--Card 2-->
         <div class="produce-card on-desktop-only">
-          <img
-            src="../assets/productPage/Red Onions.avif"
-            alt="Zoomed in on a cluster of red onions"
-          />
+          <img src="../assets/productPage/Red Onions.avif" alt="Zoomed in on a cluster of red onions" />
           <button
             class="add-cursor-pointer popular-produce-shopping-button"
             onclick="addToCart('Red Onions')"
@@ -432,11 +351,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>
@@ -448,10 +363,7 @@
         </div>
         <!--Card 3-->
         <div class="produce-card on-desktop-only">
-          <img
-            src="../assets/productPage/Garlic.avif"
-            alt="Zoom in on a cluster of Garlic laying around"
-          />
+          <img src="../assets/productPage/Garlic.avif" alt="Zoom in on a cluster of Garlic laying around" />
           <button
             class="add-cursor-pointer popular-produce-shopping-button"
             onclick="addToCart('Garlic')"
@@ -468,11 +380,7 @@
                 class="size-6"
                 style="width: 16px; height: 16px"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
               </svg>
             </span>
           </button>

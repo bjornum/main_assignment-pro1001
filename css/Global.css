@@ -3,20 +3,25 @@
 /* Base CSS - Going Mobile First Approach */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-family: Arimo, sans-serif;
   font-size: 16px;
-  margin: 0px;
-  padding: 0px;
 }
 
 /* Ensures full-height layout and removes browser default spacing. */
 html,
 body {
   height: 100%;
-  margin: 0;
+  /* margin: 0; */
+}
+
+/* Max size of the desktop - set by the assignment */
+main {
+  max-width: 1512px;
+  margin: 0 auto;
 }
 
 /* Large Body text */
