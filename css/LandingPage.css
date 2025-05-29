@@ -92,6 +92,11 @@
   padding: 0 20px;
 }
 
+/* On Mobile, there are an divider, which have some space on either side, like the cards above. */
+.produce-chat-divider {
+  margin: 0px 16px;
+}
+
 /* ===== Info Section (This is how it works section) ===== */
 .info-title {
   justify-content: center;
@@ -273,6 +278,11 @@
   /* Button got a set width on Desktop */
   .produce-full-width-button {
     width: 320px;
+  }
+
+  /* Due to my credit, it diverse the design abit.  So to correct this, i make it consistant by removing abit from the bottom of the divider line*/
+  .produce-chat-divider {
+    margin-bottom: 20px;
   }
 
   /* ===== Info Section ===== */
