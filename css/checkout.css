@@ -3,6 +3,21 @@ body {
   padding: 20px;
 }
 
+/* Just to avoid it ending abruptly, giving it some space */
+.additional-padding-bottom {
+  margin-top: 90px;
+}
+
+/* Title of the checkout page */
+.checkout-title {
+  font-size: 24px;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+/* Contain all the products the user wish to Buy */
 .checkout-container {
   display: flex;
   flex-wrap: wrap;

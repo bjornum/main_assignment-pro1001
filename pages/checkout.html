@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout</title>
+
+    <!-- SEO: Title & Description -->
+    <title>Checkout | FRAM</title>
+    <meta
+      name="description"
+      content="Review your selected fresh produce and complete your secure checkout with FRAM. Local, seasonal, and sustainable groceries — delivered to your door."
+    />
+
+    <!-- SEO: Keywords (optional for older engines) -->
+    <meta name="keywords" content="FRAM, checkout, groceries, local food, sustainable, fresh produce, home delivery" />
+
+    <!-- SEO: Open Graph / Social Sharing -->
+    <meta property="og:title" content="Checkout | FRAM" />
+    <meta
+      property="og:description"
+      content="Finish your purchase of fresh, locally sourced produce with our simple checkout process."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FRAM" />
+
+    <!-- Import Google Fonts: Frank Ruhl Libre & Arimo -->
     <link
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Arimo:wght@400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Preload Global CSS for performance -->
     <link rel="preload" href="../css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="../css/Global.css" /></noscript>
+
+    <!-- Page-specific styles -->
     <link rel="stylesheet" href="../css/Navbar.css" />
     <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/Feedback.css" />
@@ -65,18 +90,23 @@
         </div>
       </nav>
     </aside>
-    <h1 style="margin-top: 50px">Checkout</h1>
 
-    <!-- Total Checkout, and checkout button -->
-    <section>
-      <div class="checkout-total" id="checkout-total">
-        <p id="total-price">Total: 0 kr</p>
-        <button id="checkout-button" class="green-button" onclick="checkout()">Checkout</button>
-      </div>
-    </section>
+    <main class="additional-padding-bottom">
+      <h1 class="checkout-title">Checkout</h1>
 
-    <!-- Checkout container, having all products user wish to buy - can adjust accordingly here. -->
-    <div class="checkout-container" id="productContainer"></div>
+      <!-- Total Checkout, and checkout button -->
+      <section style="margin-top: 30px">
+        <div class="checkout-total" id="checkout-total">
+          <p id="total-price">Total: 0 kr</p>
+          <button id="checkout-button" class="green-button" style="margin-top: 30px" onclick="checkout()">
+            Checkout
+          </button>
+        </div>
+      </section>
+
+      <!-- Checkout container, having all products user wish to buy  -->
+      <section class="checkout-container" id="productContainer"></section>
+    </main>
 
     <!-- User feedback when adding an product to basket - use inline styling -->
     <section id="feedback" class="default-hidden">
