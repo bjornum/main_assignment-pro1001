@@ -229,21 +229,44 @@
           <div id="map"></div>
         </section>
       </section>
-      <!-- Newsletter Section -->
-      <section class="newsletter-section">
-        <h2>Subscribe to our Newsletter</h2>
-        <p>Stay updated with the latest produce and farm news!</p>
-        <form>
-          <input type="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
     </main>
+
+    <!-- Newsletter Section - Added outside of the main, to fill the screen -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <h2 class="newsletter-title" id="newsletter-heading">FRAM</h2>
+      <hr class="newsletter-divider" />
+      <h3 class="newsletter-header">STAY UPDATED</h3>
+      <p class="newsletter-subtext">
+        Sign up for our newsletter to be the first <br />
+        to know about new produce or other <br />
+        exciting news!
+      </p>
+      <form class="newsletter-form" onsubmit="newsletterSignup()" role="form">
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="First name"
+          class="newsletter-input margin-bottom-12"
+          required
+        /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail address"
+          class="newsletter-input margin-bottom-24"
+          required
+        /><br />
+        <button type="submit" class="newsletter-button">Send</button>
+      </form>
+    </section>
 
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <script src="../js/farmer-map.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/product-handling.js"></script>
+    <script src="../js/newsletter.js"></script>
   </body>
 </html>
