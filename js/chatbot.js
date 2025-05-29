@@ -2,6 +2,8 @@ const apiKey = ""; // API KEY GOES HERE - will be adjusted on netlify through it
 
 const messagesContainer = document.getElementById("messages");
 const typingIndicator = document.getElementById("typing-indicator");
+const buttonChangeOnSubmit = document.getElementById("btnChangeOnSubmit");
+const defaultButtonIcon = document.getElementById("defaultButtonIcon");
 const input = document.getElementById("userInput");
 const button = document.getElementById("sendBtn");
 
@@ -112,11 +114,15 @@ const addMessage = (sender, message) => {
 const showTypingIndicator = () => {
   typingIndicator.style.display = "flex";
   messagesContainer.scrollTop = messagesContainer.scrollHeight;
+  buttonChangeOnSubmit.style.display = "block"; // Hide the button when typing indicator is shown
+  defaultButtonIcon.style.display = "none"; // Hide the default button icon
 };
 
 // Hides the typing indicator
 const hideTypingIndicator = () => {
   typingIndicator.style.display = "none";
+  buttonChangeOnSubmit.style.display = "none"; // Show the button when typing indicator is hidden
+  defaultButtonIcon.style.display = "block"; // Show the default button icon
 };
 
 // Running a fetch request to OpenAI API - Specified behaviour toward the exam task
