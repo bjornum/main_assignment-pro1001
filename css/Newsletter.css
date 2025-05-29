@@ -1,8 +1,74 @@
 /* Newsletter Section */
+
+/* General Cotnainer for the Section */
 .newsletter-section {
-  margin-top: auto;
-  padding: 20px;
-  text-align: center;
-  background-color: #f8f8f8;
-  border-top: 1px solid #ddd;
+  background-color: #dc4131;
+  color: #ffffff;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 45px;
+}
+
+.newsletter-divider {
+  border: 0;
+  border-top: 1px solid white;
+}
+
+.newsletter-title {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 400;
+  font-size: 75px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+
+.newsletter-subtitle {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-top: 45px;
+  padding-left: 32px;
+  padding-bottom: 45px;
+}
+
+.newsletter-subtext {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 45px;
+}
+
+/* Common fields within both input fields */
+.newsletter-input {
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.newsletter-name-input {
+  margin-bottom: 12px;
+}
+
+.newsletter-email-input {
+  margin-bottom: 24px;
+}
+
+.newsletter-button {
+  width: 90%;
+  height: 45px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Desktop Styles: When the screen is 1024px or larger */
+@media (min-width: 1024px) {
 }
