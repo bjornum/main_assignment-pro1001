@@ -1,14 +1,12 @@
-/* ===== Global CSS - Will affect all pages ===== */
+/* ═════════════════════════════════════════════════
+   GLOBAL CSS - Applies Across All Pages
+   Base styles, resets, typography, layout, and shared components.
+══════════════════════════════════════════════════ */
 
-/* Base CSS - Going Mobile First Approach */
+/* ─── RESET AND BASE ───────────────────────────── */
 * {
   box-sizing: border-box;
   margin: 0;
-}
-
-body {
-  font-family: Arimo, sans-serif;
-  font-size: 16px;
 }
 
 /* Ensures full-height layout and removes browser default spacing. */
@@ -18,17 +16,50 @@ body {
   /* margin: 0; */
 }
 
+body {
+  font-family: Arimo, sans-serif;
+  font-size: 16px;
+}
+
 /* Max size of the desktop - set by the assignment */
 main {
   max-width: 1512px;
   margin: 0 auto;
 }
 
-/* At certain places, i felt it would be good to credit the ones taking the photo, so this class places it nicely */
-.image-credit {
-  padding-left: 20px;
-  padding-top: 2px;
+/* ─── TYPOGRAPHY ───────────────────────────────── */
+
+/* Logo */
+.logo {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 300;
+  font-size: 75px;
 }
+
+/* Header */
+.header {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* Sub-Header */
+.sub-header {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Accent Text */
+.accent-text {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* ─── BUTTON STYLES ────────────────────────────── */
 
 /* Main Button */
 .primary-button {
@@ -61,7 +92,7 @@ main {
   opacity: 0.4;
 }
 
-/* Helper Classes */
+/* ─── TEXT-ONLY BUTTON ─────────────────────────── */
 
 .text-button {
   background: none;
@@ -75,39 +106,14 @@ main {
   text-decoration: underline;
 }
 
-/* Specific Elements */
+/* ─── IMAGE CREDITS ────────────────────────────── */
 
-/* Logo */
-.logo {
-  font-family: "Frank Ruhl Libre", sans-serif;
-  font-weight: 300;
-  font-size: 75px;
+.image-credit {
+  padding-left: 20px;
+  padding-top: 2px;
 }
 
-/* Header */
-.header {
-  font-family: "Arimo", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-/* Sub-Header */
-.sub-header {
-  font-family: "Arimo", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-/* Accent Text */
-.accent-text {
-  font-family: "Frank Ruhl Libre", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-/* Desktop Styles: When the screen is 1024px or larger */
+/* ─── MEDIA QUERIES: DESKTOP STYLES ────────────── */
 @media (min-width: 1024px) {
   /* Logo */
   .logo {
