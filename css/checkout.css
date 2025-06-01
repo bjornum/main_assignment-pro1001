@@ -1,14 +1,17 @@
+/* ===== CSS Specific to the Checkout Page ===== */
+
+/* Basic Page Setup */
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
 }
 
-/* Just to avoid it ending abruptly, giving it some space */
+/* Adds vertical space to prevent the bottom from feeling cramped */
 .additional-padding-bottom {
   margin-top: 90px;
 }
 
-/* Title of the checkout page */
+/* Checkout Title */
 .checkout-title {
   font-size: 24px;
   font-family: "Arimo", sans-serif;
@@ -17,7 +20,9 @@ body {
   margin-top: 70px;
 }
 
-/* Contain all the products the user wish to Buy */
+/* ===== Checkout Items Section ===== */
+
+/* Container holding all product cards */
 .checkout-container {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +31,7 @@ body {
   margin-top: 50px;
 }
 
+/* Individual product card */
 .checkout-card {
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -37,26 +43,33 @@ body {
   align-items: center;
 }
 
+/* Product image in card */
 .checkout-card img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
+/* Product name/title */
 .checkout-card h3 {
   margin: 10px 0 5px;
 }
 
+/* Price display */
 .checkout-card .price {
   margin-bottom: 8px;
 }
 
+/* Quantity or action controls */
 .checkout-card .controls {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
+/* ===== Responsive Design ===== */
+
+/* Mobile: Make product cards full width */
 @media (max-width: 768px) {
   .checkout-card {
     width: 100%;
