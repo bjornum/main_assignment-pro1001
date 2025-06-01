@@ -1,0 +1,94 @@
+/* =================
+    * Utilities.css
+    * This file contains utility classes for common styles.
+================== */
+
+/* ========== lAYOUT AND DISPLAY =========== */
+
+.display-flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* ========== PADDING AND MARGIN =========== */
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-45 {
+  padding: 45px;
+}
+
+.padding-top-90 {
+  padding-top: 90px;
+}
+
+/* Note: !important set due to something overwriting it */
+.margin-bottom-12 {
+  margin-bottom: 12px !important;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-top-45 {
+  margin-top: 45px !important;
+}
+
+.margin-bottom-90 {
+  margin-bottom: 90px !important;
+}
+
+.margin-right-30 {
+  margin-right: 30px !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+/* ========== VISIBILITY AND DISPLAY =========== */
+
+/* Used on elements that are to be hidden by default */
+.default-hidden {
+  display: none;
+}
+
+/* Hide on Mobile, show on Desktop */
+.on-desktop-only {
+  display: none;
+}
+
+/* Hide on Desktop, show on Mobile */
+.on-mobile-only {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  /* Show on Desktop Only */
+  .on-desktop-only {
+    display: block;
+  }
+
+  /* Show on Mobile Only */
+  .on-mobile-only {
+    display: none;
+  }
+}

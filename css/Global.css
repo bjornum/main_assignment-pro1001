@@ -96,84 +96,13 @@ main {
 }
 
 /* Helper Classes */
-.center-items {
-  align-items: center;
-}
-
-.center-text {
-  text-align: center;
-}
-
-.display-flex {
-  display: flex;
-}
 
 .add-cursor-pointer {
   cursor: pointer;
 }
 
-.padding-20 {
-  padding: 20px;
-}
-
-.padding-45 {
-  padding: 45px;
-}
-
-.padding-top-90 {
-  padding-top: 90px;
-}
-
-/* ===== Margin Bottoms, Set with Important due to something overwriting it. ===== */
-.margin-bottom-12 {
-  margin-bottom: 12px !important;
-}
-
-.margin-bottom-24 {
-  margin-bottom: 24px !important;
-}
-
-.margin-bottom-30 {
-  margin-bottom: 30px !important;
-}
-
-.margin-top-45 {
-  margin-top: 45px !important;
-}
-
-.margin-bottom-90 {
-  margin-bottom: 90px !important;
-}
-
-.margin-right-30 {
-  margin-right: 30px !important;
-}
-
-.object-fit-cover {
-  object-fit: cover;
-}
-
 .general-border {
   outline: black 1px solid;
-}
-
-.no-margin {
-  margin: 0 !important;
-}
-
-/* Used on elements that are to be hidden by default */
-.default-hidden {
-  display: none;
-}
-
-/* Show on Desktop Only */
-.on-desktop-only {
-  display: none;
-}
-
-/* Show on Mobile Only */
-.on-mobile-only {
-  display: block;
 }
 
 .text-button {
@@ -245,13 +174,5 @@ main {
   /* Accent Text */
   .accent-text {
     font-size: 20px;
-  }
-
-  .on-desktop-only {
-    display: block;
-  }
-
-  .on-mobile-only {
-    display: none;
   }
 }
