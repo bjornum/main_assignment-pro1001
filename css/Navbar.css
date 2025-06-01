@@ -33,6 +33,7 @@
   font-family: "Frank Ruhl Libre", sans-serif;
   font-weight: 500;
   color: #0b0a08;
+  transition: all 0.3s ease;
 }
 
 /* Header Links */
@@ -42,6 +43,11 @@
   font-size: 1.2rem;
   margin: 0 10px;
   transition: color 0.3s ease;
+}
+
+/* Header Link Hover Effect, to make it more clear that this have some functionality */
+.header-link:hover .header-title {
+  text-shadow: 0px 0px 5px rgba(30, 144, 255, 0.5);
 }
 
 /* ---------- Buttons ---------- */
@@ -105,6 +111,14 @@
   font-family: "Frank Ruhl Libre", sans-serif;
 }
 
+/* Make user see hover more clearly */
+.side-menu .close-menu-button:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
 /* Side Menu Title */
 .side-menu-title {
   flex: 1;
@@ -154,6 +168,14 @@
   transition: color 0.3s ease;
 }
 
+/* More clear on hover on the link */
+.menu-items a:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* Footer Section of the Side Menu */
 .menu-footer {
   margin-bottom: 100px;
@@ -166,6 +188,14 @@
   color: #0b0a08;
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+/* More clear on hover on the link */
+.menu-footer a:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* ===== Desktop Styles (min-width: 1024px) ===== */
