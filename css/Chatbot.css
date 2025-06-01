@@ -1,6 +1,6 @@
-/* ===== CSS Specified for the Chatbot Page ===== */
+/* ===== Chatbot Page Specific Styles ===== */
 
-/* Page Background and Layout Container */
+/* --- Page Background and Layout --- */
 .chatbot-body {
   height: 100vh;
   display: flex;
@@ -10,6 +10,35 @@
   background-size: cover;
 }
 
+/* --- Main Container for Chat Messages and Input --- */
+.chatbot-messages-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* --- Scrollable Chat Message Area --- */
+.chatbot-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Starts message flow from the bottom */
+.chatbot-messages::before {
+  content: "";
+  margin-top: auto;
+}
+
+/* --- Chat Input Area --- */
 .chatbot-input-area {
   display: flex;
   flex-shrink: 0;
@@ -22,12 +51,44 @@
   box-sizing: border-box;
 }
 
+/* Chat Input Form */
 .chatbot-input-area form {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
+/* --- Chat Input Field --- */
+.chatbot-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #e1eaf0;
+  resize: none;
+}
+
+/* --- Send Button Styling --- */
+.chatbot-send-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Heroicons used in the send button */
+.chatbot-send-button-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* --- Typing Indicator Styles --- */
+
+/* Visually hidden class for accessibility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,67 +101,12 @@
   border: 0;
 }
 
-/* Chatbot input area */
-.chatbot-input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  outline: none;
-  background-color: #e1eaf0;
-  resize: none;
-}
-
-.chatbot-send-button {
-  margin-left: 10px;
-  padding: 10px 20px;
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-/* Size of the send heroicon icon */
-.chatbot-send-button-icon {
-  width: 16px;
-  height: 16px;
-}
-
-/* Main Container for messages and input */
-.chatbot-messages-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-/* Scrollable message area */
-.chatbot-messages {
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
-}
-
-/* Make sure the messages begins on the bottom of the container, and grow upwards as on the design */
-.chatbot-messages::before {
-  content: "";
-  margin-top: auto;
-}
-
-/* Hide the Loader */
+/* Hides loader by default */
 .typing-loader {
   display: none;
 }
 
-/* Show the Loader when the chatbot is "typing" */
+/* Styles the "typing..." message bubble */
 .typing-indicator {
   font-style: italic;
   opacity: 0.8;
@@ -117,13 +123,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Size of the icon - unable to directly use heroicons size */
+/* Icon inside typing indicator */
 .typing-indicator-icon {
   width: 24px;
   height: 24px;
 }
 
-/* Make the typing indicator blink */
+/* Makes the typing indicator pulse */
 @keyframes blink {
   0%,
   100% {
@@ -134,6 +140,7 @@
   }
 }
 
+/* --- Error Message --- */
 .error-message-container {
   border: 1px #dc4131 solid;
   margin: 0px 10px 0px 10px;
@@ -142,12 +149,13 @@
   color: #dc4131;
 }
 
+/* --- User Input Instructions --- */
 .chatbot-input-instructions {
   color: grey;
   text-align: center;
 }
 
-/* Desktop Styles: When the screen is 1024px or larger */
+/* --- Responsive Styles for Desktop --- */
 @media (min-width: 1024px) {
   .chatbot-messages-container {
     width: 90%;
