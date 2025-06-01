@@ -73,6 +73,21 @@
   cursor: pointer;
 }
 
+.newsletter-success-container {
+  display: none;
+  text-align: center;
+}
+
+/* Displays the thank you message when submitting */
+.newsletter-success-message {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* Desktop Styles: When the screen is 1024px or larger */
 @media (min-width: 1024px) {
   /* More space at the bottom after the send button */
