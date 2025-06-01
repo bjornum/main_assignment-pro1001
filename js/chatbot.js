@@ -1,4 +1,4 @@
-const apiKey = ""; // API KEY GOES HERE - will be adjusted on netlify through its environment variables
+const apiKey = ""; // API KEY GOES HERE
 
 const messagesContainer = document.getElementById("messages");
 const typingIndicator = document.getElementById("typing-indicator");
