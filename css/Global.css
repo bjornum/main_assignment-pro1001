@@ -24,11 +24,6 @@ main {
   margin: 0 auto;
 }
 
-/* Large Body text */
-.large-body {
-  font-size: 18px;
-}
-
 /* At certain places, i felt it would be good to credit the ones taking the photo, so this class places it nicely */
 .image-credit {
   padding-left: 20px;
@@ -114,11 +109,6 @@ main {
 
 /* Desktop Styles: When the screen is 1024px or larger */
 @media (min-width: 1024px) {
-  /* Large Body Text */
-  .large-body {
-    font-size: 20px;
-  }
-
   /* Logo */
   .logo {
     font-size: 200px;

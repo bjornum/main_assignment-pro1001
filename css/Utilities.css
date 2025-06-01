@@ -91,6 +91,15 @@
 }
 
 /* ═════════════════════════════════════════════════
+   FONT UTILITIES
+   Text styling and typography.
+══════════════════════════════════════════════════ */
+/* Sub Headers */
+.text-large {
+  font-size: 18px;
+}
+
+/* ═════════════════════════════════════════════════
    COLOR UTILITIES
    Text and background color.
 ══════════════════════════════════════════════════ */
@@ -148,6 +157,11 @@
 ══════════════════════════════════════════════════ */
 
 @media (min-width: 1024px) {
+  /* Sub Headers */
+  .text-large {
+    font-size: 20px;
+  }
+
   /* Show on Desktop Only */
   .on-desktop-only {
     display: block;
