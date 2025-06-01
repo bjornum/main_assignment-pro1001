@@ -1,8 +1,8 @@
-/* ===== All CSS Specified for the Landing Page ===== */
+/* ===== Landing Page Styles ===== */
 
-/* ===== Top Section - Image with text ===== */
+/* ===== Top Section ===== */
 
-/* Top section, with an background image taking 100% of the screen when user enters the page */
+/* Background image covering full viewport height */
 .top-background-section {
   position: relative;
   width: 100%;
@@ -12,7 +12,7 @@
   background-image: url("../assets/landingPage/main-background.avif");
 }
 
-/* The FRAM Text (logo) on the background image */
+/* FRAM Text (logo) positioned over background */
 .top-logo {
   position: absolute;
   top: 12%;
@@ -26,7 +26,7 @@
   font-weight: 300;
 }
 
-/* An Vertical Line that goes between title and sub text on background image */
+/* Vertical white line between title and subtext */
 .top-underline {
   position: absolute;
   top: 24%;
@@ -37,7 +37,7 @@
   background-color: white;
 }
 
-/* Sub text on the background image */
+/* Subheading text over background */
 .top-subheading {
   position: absolute;
   top: 78%;
@@ -52,12 +52,12 @@
 
 /* ===== Produce and Chatbot Section ===== */
 
-/* Makes the Produce and chat stack on top of each other */
+/* Container flex direction (column on mobile) */
 .produce-chat-container {
   flex-direction: column;
 }
 
-/* Ensuring the font size and design on the produce and chat title */
+/* Produce and Chat titles */
 .produce-chat-title {
   font-family: "Arimo", sans-serif;
   font-weight: 400;
@@ -73,7 +73,7 @@
   line-height: 1.2;
 }
 
-/* Styling the image to fit the design, especially in mind with the spacing around it */
+/* Produce and Chat image styling */
 .produce-chat-image {
   width: 100%;
   object-fit: cover;
@@ -83,7 +83,7 @@
   margin-top: 45px;
 }
 
-/* Ensuring that the button scales accordingly to the design on Mobile */
+/* Full width button with padding and margin for mobile */
 .produce-full-width-button {
   height: 45px;
   width: calc(100% - 40px);
@@ -92,28 +92,28 @@
   padding: 0 20px;
 }
 
-/* On Mobile, there are an divider, which have some space on either side, like the cards above. */
+/* Divider spacing with horizontal margin */
 .produce-chat-divider {
   margin: 0px 16px;
 }
 
-/* ===== Info Section (This is how it works section) ===== */
+/* ===== Info Section ("This is how it works") ===== */
 
-/* Positioning and spacing of the main header */
+/* Centering header with vertical padding */
 .info-header {
   justify-content: center;
   padding-top: 90px;
   padding-bottom: 45px;
 }
 
-/* Title named: This is how it works */
+/* Info section title */
 .info-title {
   font-size: 24px;
   font-family: "Arimo", sans-serif;
   text-transform: uppercase;
 }
 
-/* For each of the headers in the other cards */
+/* Info subsection headers */
 .info-sub-header {
   font-size: 18px;
   text-transform: uppercase;
@@ -121,24 +121,24 @@
   font-family: "Arimo", sans-serif;
 }
 
-/* Due to how link can argue, this one is placed on element above to push it slightly down */
+/* Spacer for links to add margin */
 .info-link-spacer {
   margin-bottom: 24px;
 }
 
-/* Makes the info section stack on top of each other */
+/* Flex direction for stacking on mobile */
 .info-section {
   flex-direction: column;
 }
 
-/* Each of the cards in the info section */
+/* Info steps container flex direction */
 .info-steps {
   flex-direction: column;
 }
 
 /* ===== Popular Produce Section ===== */
 
-/* Main title of the Popular Produce Section */
+/* Popular produce main title */
 .popular-produce-title {
   font-family: "Arimo", sans-serif;
   font-weight: 400;
@@ -149,7 +149,7 @@
   margin-bottom: 30px;
 }
 
-/* Add to Basket Button on top of the cards */
+/* Add to Basket button style */
 .popular-produce-shopping-button {
   display: flex;
   align-items: center;
@@ -168,20 +168,20 @@
   font-family: "Arimo", sans-serif;
 }
 
-/* Placement of the add to cart icon */
+/* Icon container inside Add to Basket button */
 .popular-produce-shopping-button-icon {
   margin-left: 5px;
   display: flex;
   align-items: center;
 }
 
-/* Setting a size of the svg icon, due to the inate class from heroicons not working (tailwind class i belive?) */
+/* Override SVG size (heroicons/tailwind conflict) */
 .popular-produce-shopping-button-svg {
   width: 16px;
   height: 16px;
 }
 
-/* To wrap the cards in flex, and customise it for Mobile*/
+/* Container wrapping cards with horizontal scroll on mobile */
 .popular-produce-card-container {
   display: flex;
   overflow: hidden;
@@ -189,6 +189,7 @@
   padding: 0px 30px;
 }
 
+/* Individual popular produce cards */
 .popular-produce-card {
   flex: 0 0 calc(100% - 32px);
   max-width: 300px;
@@ -198,7 +199,7 @@
   box-sizing: border-box;
 }
 
-/* Image inside the card, with a set width and height to ensure it fits nicely by design given */
+/* Images inside cards */
 .popular-produce-card img {
   width: 270px;
   height: 327px;
@@ -206,10 +207,7 @@
   object-fit: cover;
 }
 
-/* Type and price of the product, displayed below the image
-  - Slight larger margin top, due to how it scales into the card itself 
-  - Scaled the image to 270, hence able to take 10px of margin on either side to remake the design
-*/
+/* Product type and price layout */
 .popular-produce-type-and-price {
   margin-top: 28px;
   margin-right: 10px;
@@ -220,6 +218,7 @@
   font-size: 16px;
 }
 
+/* Weight text styling */
 .popular-produce-weight {
   margin-top: 5px;
   text-align: left;
@@ -228,6 +227,7 @@
   color: #5a5d5f;
 }
 
+/* Navigation button container (scroll buttons) */
 .popular-produce-navigation-button-container {
   display: flex;
   justify-content: center;
@@ -252,18 +252,15 @@
   border-radius: 50%;
 }
 
-/* ===== Desktop Styles: When the screen is 1024px or larger ===== */
+/* ===== Desktop Styles (min-width: 1024px) ===== */
 @media (min-width: 1024px) {
-  /* ===== Top Section ===== */
-
-  /* Top text (logo), placed abit further down on desktop */
+  /* -- Top Section -- */
   .top-logo {
     top: 20%;
     left: 50%;
     font-size: 200px;
   }
 
-  /* The Vertical line that goes between logo and sub text, shorter on desktop */
   .top-underline {
     top: 45%;
     left: 50%;
@@ -271,7 +268,6 @@
     background-color: white;
   }
 
-  /* Sub text on the background image */
   .top-subheading {
     top: 82%;
     left: 50%;
@@ -280,13 +276,14 @@
     text-align: center;
   }
 
-  /* ===== Produce and Chat Section ===== */
+  /* -- Produce and Chat Section -- */
 
-  /* Makes the Produce and chat section stand next to each other on Desktop */
+  /* Layout */
   .produce-chat-container {
     flex-direction: row;
   }
 
+  /* Headings */
   .produce-chat-title {
     font-size: 36px;
   }
@@ -296,7 +293,7 @@
     padding-bottom: 45px;
   }
 
-  /* Image on Desktop got a stricter width compared to Mobile */
+  /* Image size and centering */
   .produce-chat-image {
     width: 448px;
     height: 327px;
@@ -304,29 +301,30 @@
     margin: 0 auto;
   }
 
-  /* Adjustment as this one scaled poorly from Mobile to Desktop, requiring some extra touch to look nice */
+  /* Credit positioning */
   .image-credits-positioning {
     text-align: center;
   }
 
-  /* An Desktop Only class, which again ensures the scaling between these to be as designed on Desktop */
+  /* Produce chat card layout */
   .produce-chat-card {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  /* Button got a set width on Desktop */
+  /* Button width adjustment */
   .produce-full-width-button {
     width: 320px;
   }
 
-  /* Due to my credit, it diverse the design abit.  So to correct this, i make it consistant by removing abit from the bottom of the divider line*/
+  /* Divider margin bottom adjustment */
   .produce-chat-divider {
     margin-bottom: 20px;
   }
 
-  /* ===== Info Section ===== */
+  /* -- Info Section -- */
+
   .info-section {
     flex-direction: row;
     height: 785px;
@@ -344,7 +342,6 @@
     font-size: 2rem;
   }
 
-  /* For each of the headers in the other cards */
   .info-sub-header {
     font-size: 20px;
     width: 278px;
@@ -376,34 +373,32 @@
     padding-right: 197px;
   }
 
-  /* ===== Popular Produce Section ===== */
+  /* -- Popular Produce Section -- */
 
-  /* General spacing, to fit the design*/
+  /* General spacing for popular produce */
   .popular-produce-section-spacing {
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 90px;
   }
 
-  /* Main title of the Popular Produce Section */
   .popular-produce-title {
     font-size: 36px;
     margin-left: 30px;
     margin-bottom: 45px;
   }
 
-  /* To remove extra padding and margin*/
   section {
     padding: 0;
     margin: 0;
   }
 
-  /* Hide buttons on desktop */
+  /* Hide scroll buttons on desktop */
   .popular-produce-navigation-button-container {
     display: none;
   }
 
-  /* To wrap the cards in flex, and customise it for Desktop */
+  /* Product card layout in grid */
   .popular-produce-card-container {
     justify-content: start;
     width: 100%;
