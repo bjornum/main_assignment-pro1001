@@ -29,39 +29,10 @@ main {
   font-size: 18px;
 }
 
-.primary-text {
-  color: #0b0a08;
-}
-
-.secondary-text {
-  color: #ffffff;
-}
-
-/*Due to not finding a good colour on stylesheet, i made this for those dark grey text */
-.greyed-text {
-  color: #5a5d5f;
-}
-
 /* At certain places, i felt it would be good to credit the ones taking the photo, so this class places it nicely */
 .image-credit {
   padding-left: 20px;
   padding-top: 2px;
-}
-
-.primary-background-color {
-  background-color: #f7f2de;
-}
-
-.color-red {
-  color: #dc4131;
-}
-
-.color-Light-blue {
-  color: #e1eaf0;
-}
-
-.color-green {
-  color: #008f51;
 }
 
 /* Main Button */
@@ -96,14 +67,6 @@ main {
 }
 
 /* Helper Classes */
-
-.add-cursor-pointer {
-  cursor: pointer;
-}
-
-.general-border {
-  outline: black 1px solid;
-}
 
 .text-button {
   background: none;

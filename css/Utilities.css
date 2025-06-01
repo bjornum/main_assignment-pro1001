@@ -3,7 +3,10 @@
     * This file contains utility classes for common styles.
 ================== */
 
-/* ========== lAYOUT AND DISPLAY =========== */
+/* ═════════════════════════════════════════════════
+   LAYOUT & DISPLAY UTILITIES
+   Helps with positioning and layout of elements.
+══════════════════════════════════════════════════ */
 
 .display-flex {
   display: flex;
@@ -21,7 +24,10 @@
   object-fit: cover;
 }
 
-/* ========== PADDING AND MARGIN =========== */
+/* ════════════════════════════════════════
+   SPACING UTILITIES
+   Padding and margin
+═════════════════════════════════════════ */
 
 .padding-20 {
   padding: 20px;
@@ -64,7 +70,10 @@
   margin: 0 !important;
 }
 
-/* ========== VISIBILITY AND DISPLAY =========== */
+/* ═════════════════════════════════════════════════
+   RESPONSIVE VISIBILITY UTILITIES
+   Controls element visibility across breakpoints.
+══════════════════════════════════════════════════ */
 
 /* Used on elements that are to be hidden by default */
 .default-hidden {
@@ -80,6 +89,63 @@
 .on-mobile-only {
   display: block;
 }
+
+/* ═════════════════════════════════════════════════
+   COLOR UTILITIES
+   Text and background color.
+══════════════════════════════════════════════════ */
+
+.primary-text {
+  color: #0b0a08;
+}
+
+.secondary-text {
+  color: #ffffff;
+}
+
+/* Due to not finding a good colour on stylesheet, i made this for those dark grey text */
+.greyed-text {
+  color: #5a5d5f;
+}
+
+.color-red {
+  color: #dc4131;
+}
+
+.color-Light-blue {
+  color: #e1eaf0;
+}
+
+.color-green {
+  color: #008f51;
+}
+
+.primary-background-color {
+  background-color: #f7f2de;
+}
+
+/* ═════════════════════════════════════════════════
+   BORDER UTILITIES
+   Adds outlines and border styling.
+══════════════════════════════════════════════════ */
+
+.general-border {
+  outline: black 1px solid;
+}
+
+/* ═════════════════════════════════════════════════
+   INTERACTIVITY UTILITIES
+   Enhances element interaction and behavior.
+══════════════════════════════════════════════════ */
+
+.add-cursor-pointer {
+  cursor: pointer;
+}
+
+/* ═════════════════════════════════════════════════
+   MEDIA QUERIES: RESPONSIVE DISPLAY OVERRIDES
+   Overrides for mobile/desktop visibility.
+══════════════════════════════════════════════════ */
 
 @media (min-width: 1024px) {
   /* Show on Desktop Only */
