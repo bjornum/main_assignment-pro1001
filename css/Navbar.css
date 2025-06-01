@@ -1,4 +1,8 @@
-/* Navbar Styles */
+/* ===== Navbar Styles ===== */
+
+/* ---------- Navbar ---------- */
+
+/* Fixed Header */
 .header {
   position: fixed;
   top: 0;
@@ -12,6 +16,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* Header Sections (Left, Center, Right) */
 .header-left,
 .header-center,
 .header-right {
@@ -19,6 +25,7 @@
   align-items: center;
 }
 
+/* Site Title */
 .header-title {
   font-size: 1.5rem;
   text-align: center;
@@ -26,8 +33,10 @@
   font-family: "Frank Ruhl Libre", sans-serif;
   font-weight: 500;
   color: #0b0a08;
+  transition: all 0.3s ease;
 }
 
+/* Header Links */
 .header-link {
   text-decoration: none;
   color: #333;
@@ -36,6 +45,14 @@
   transition: color 0.3s ease;
 }
 
+/* Header Link Hover Effect, to make it more clear that this have some functionality */
+.header-link:hover .header-title {
+  text-shadow: 0px 0px 5px rgba(30, 144, 255, 0.5);
+}
+
+/* ---------- Buttons ---------- */
+
+/* Checkout Button Button */
 .green-button {
   background-color: #006c3f;
   border: none;
@@ -45,19 +62,22 @@
   color: #e1eaf0;
 }
 
+/* Hamburger Button */
 .hamburger-menu-button {
   border: none;
   cursor: pointer;
   background-color: #f7f2de;
 }
 
-/* Size of the Hamburger Menu Icon */
+/* Hamburger Icon Size */
 .hamburger-menu-icon {
   width: 36px;
   height: 36px;
 }
 
-/* Side Menu Styles */
+/* ---------- Side Menu (Mobile Nav) ---------- */
+
+/* Fixed Side Menu */
 .side-menu {
   position: fixed;
   top: 0;
@@ -73,10 +93,12 @@
   padding: 20px;
 }
 
+/* Side Menu Open State */
 .side-menu.open {
   left: 0;
 }
 
+/* Close Button in Side Menu */
 .side-menu .close-menu-button {
   position: absolute;
   top: 10px;
@@ -89,13 +111,22 @@
   font-family: "Frank Ruhl Libre", sans-serif;
 }
 
+/* Make user see hover more clearly */
+.side-menu .close-menu-button:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
+/* Side Menu Title */
 .side-menu-title {
   flex: 1;
   text-align: center;
   margin: 0px;
 }
 
-/* Fixing the border, taking full width below the close button */
+/* Side Menu Bottom Border (below close button) */
 .side-menu-border {
   width: calc(100% + 40px);
   height: 1px;
@@ -104,6 +135,7 @@
   margin-left: -20px;
 }
 
+/* Menu Layout Container */
 .menu-content {
   display: flex;
   flex-direction: column;
@@ -111,7 +143,7 @@
   height: 100%;
 }
 
-/* Affects the elements (product and chat) and most important position them more correctly according to the design. */
+/* Menu Items Container */
 .menu-items {
   list-style: none;
   padding: 0;
@@ -122,12 +154,12 @@
   margin-top: 50px;
 }
 
-/* Creates an slight gap between the Product and Chat link in sidebar */
+/* Space Between Menu Items */
 .menu-items li {
   margin: 10px 0;
 }
 
-/* General styling of the elements */
+/* Menu Links Styling */
 .menu-items a {
   font-family: "Frank Ruhl Libre", sans-serif;
   color: #0b0a08;
@@ -136,11 +168,21 @@
   transition: color 0.3s ease;
 }
 
+/* More clear on hover on the link */
+.menu-items a:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Footer Section of the Side Menu */
 .menu-footer {
   margin-bottom: 100px;
   text-align: center;
 }
 
+/* Footer Links Styling */
 .menu-footer a {
   font-family: "Frank Ruhl Libre", sans-serif;
   color: #0b0a08;
@@ -148,17 +190,27 @@
   font-size: 1.5rem;
 }
 
-/* Desktop-specific styles */
+/* More clear on hover on the link */
+.menu-footer a:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ===== Desktop Styles (min-width: 1024px) ===== */
 @media (min-width: 1024px) {
+  /* Limit Width of Side Menu */
   .side-menu {
     width: 30%;
   }
 
+  /* Adjust Border Spacing for Desktop */
   .side-menu-border {
     margin-top: 47px;
   }
 
-  /* Positioning the links (products and Chat) toward center ish, than the Mobile are showing */
+  /* Adjust Menu Item Spacing for Desktop */
   .menu-items {
     margin-top: 50px;
     padding-top: 30%;

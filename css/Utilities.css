@@ -1,0 +1,174 @@
+/* =================
+    * Utilities.css
+    * This file contains utility classes for common styles.
+================== */
+
+/* ═════════════════════════════════════════════════
+   LAYOUT & DISPLAY UTILITIES
+   Helps with positioning and layout of elements.
+══════════════════════════════════════════════════ */
+
+.display-flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* ════════════════════════════════════════
+   SPACING UTILITIES
+   Padding and margin
+═════════════════════════════════════════ */
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-45 {
+  padding: 45px;
+}
+
+.padding-top-90 {
+  padding-top: 90px;
+}
+
+/* Note: !important set due to something overwriting it */
+.margin-bottom-12 {
+  margin-bottom: 12px !important;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-top-45 {
+  margin-top: 45px !important;
+}
+
+.margin-bottom-90 {
+  margin-bottom: 90px !important;
+}
+
+.margin-right-30 {
+  margin-right: 30px !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+/* ═════════════════════════════════════════════════
+   RESPONSIVE VISIBILITY UTILITIES
+   Controls element visibility across breakpoints.
+══════════════════════════════════════════════════ */
+
+/* Used on elements that are to be hidden by default */
+.default-hidden {
+  display: none;
+}
+
+/* Hide on Mobile, show on Desktop */
+.on-desktop-only {
+  display: none;
+}
+
+/* Hide on Desktop, show on Mobile */
+.on-mobile-only {
+  display: block;
+}
+
+/* ═════════════════════════════════════════════════
+   FONT UTILITIES
+   Text styling and typography.
+══════════════════════════════════════════════════ */
+/* Sub Headers */
+.text-large {
+  font-size: 18px;
+}
+
+/* ═════════════════════════════════════════════════
+   COLOR UTILITIES
+   Text and background color.
+══════════════════════════════════════════════════ */
+
+.primary-text {
+  color: #0b0a08;
+}
+
+.secondary-text {
+  color: #ffffff;
+}
+
+/* Due to not finding a good colour on stylesheet, i made this for those dark grey text */
+.greyed-text {
+  color: #5a5d5f;
+}
+
+.color-red {
+  color: #dc4131;
+}
+
+.color-Light-blue {
+  color: #e1eaf0;
+}
+
+.color-green {
+  color: #008f51;
+}
+
+.primary-background-color {
+  background-color: #f7f2de;
+}
+
+/* ═════════════════════════════════════════════════
+   BORDER UTILITIES
+   Adds outlines and border styling.
+══════════════════════════════════════════════════ */
+
+.general-border {
+  outline: black 1px solid;
+}
+
+/* ═════════════════════════════════════════════════
+   INTERACTIVITY UTILITIES
+   Enhances element interaction and behavior.
+══════════════════════════════════════════════════ */
+
+.add-cursor-pointer {
+  cursor: pointer;
+}
+
+/* ═════════════════════════════════════════════════
+   MEDIA QUERIES: RESPONSIVE DISPLAY OVERRIDES
+   Overrides for mobile/desktop visibility.
+══════════════════════════════════════════════════ */
+
+@media (min-width: 1024px) {
+  /* Sub Headers */
+  .text-large {
+    font-size: 20px;
+  }
+
+  /* Show on Desktop Only */
+  .on-desktop-only {
+    display: block;
+  }
+
+  /* Show on Mobile Only */
+  .on-mobile-only {
+    display: none;
+  }
+}

@@ -33,9 +33,13 @@
       rel="stylesheet"
     />
 
-    <!-- Performance: Preload Global Styles -->
+    <!-- Preload Global CSS for performance -->
     <link rel="preload" href="../css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="../css/Global.css" /></noscript>
+
+    <!-- Preload Utilities CSS for performance -->
+    <link rel="preload" href="./css/Utilities.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./css/Utilities.css" /></noscript>
 
     <!-- Page-specific styles -->
     <link rel="stylesheet" href="../css/Navbar.css" />
@@ -83,7 +87,7 @@
       </div>
       <div class="side-menu-border"></div>
       <nav class="menu-content" role="navigation">
-        <ul class="menu-items large-body">
+        <ul class="menu-items text-large">
           <li><a href="/pages/product.html" aria-label="Go to product page">Products</a></li>
           <li><a href="/pages/chatbot.html" aria-label="Go to the chatbot">Chat</a></li>
         </ul>

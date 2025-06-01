@@ -1,11 +1,11 @@
 /* ===== Produce Intro Section =====*/
 
-/* Create some distance from navbar - quickfix for now. */
+/* Adds vertical spacing from the fixed navbar */
 .space-from-navbar {
   margin-top: 65px;
 }
 
-/* Title of the produce page */
+/* Page title for the produce section */
 .produce-intro-title {
   font-family: "Arimo", sans-serif;
   font-weight: 400;
@@ -15,7 +15,7 @@
   padding-top: 90px;
 }
 
-/* Experimented abit, and changed from br to width to get the text breaking wanted */
+/* Introductory text under the title with controlled width for line breaks */
 .produce-intro-text {
   font-family: "Arimo", sans-serif;
   font-weight: 400;
@@ -25,8 +25,10 @@
   margin-right: 25px;
   width: 390px;
 }
-/*===== Produce Card Section =====*/
 
+/* ===== Produce Card Section ===== */
+
+/* Grid container for all product cards */
 .produce-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -35,12 +37,14 @@
   margin-top: 40px;
 }
 
+/* Individual product card styling */
 .produce-card {
   text-align: center;
   border-radius: 8px;
   margin-bottom: 30px;
 }
 
+/* Product image styling within each card */
 .produce-card img {
   width: 100%;
   height: 280px;
@@ -50,11 +54,12 @@
   margin-bottom: 10px;
 }
 
+/* Removed given right spacing to the right of the cards */
 .produce-card-spacing {
   margin-right: 0px;
 }
 
-/* Note to self: renamed this class - will break product page - Fix */
+/* "Add to basket" button placed inside each product card */
 .produce-shopping-button {
   display: flex;
   align-items: center;
@@ -73,20 +78,20 @@
   font-family: "Arimo", sans-serif;
 }
 
-/* Note to self: renamed this class - will break product page - Fix */
+/* Icon wrapper inside the shopping button */
 .produce-shopping-button-icon {
   margin-left: 5px;
   display: flex;
   align-items: center;
 }
 
-/* Setting a size of the svg icon, due to the inate class from heroicons not working (tailwind class i belive?) */
+/* Manually size the icon since Tailwind or other classes weren’t applied */
 .produce-shopping-button-svg {
   width: 16px;
   height: 16px;
 }
 
-/* Note to self: renamed this class - will break product page - Fix */
+/* Displays product type (e.g., apple, carrot) and price */
 .produce-type-and-price {
   margin-top: 28px;
   margin-right: 10px;
@@ -97,7 +102,7 @@
   font-size: 20px;
 }
 
-/* Note to self: renamed this class - will break product page - Fix */
+/* Product weight information */
 .produce-weight {
   margin-top: 5px;
   text-align: left;
@@ -108,6 +113,7 @@
 
 /* ===== Partnering Farm Text and Map ===== */
 
+/* Header above map and description */
 .partnering-farms-header {
   font-family: "Arimo", sans-serif;
   font-weight: 400;
@@ -120,6 +126,7 @@
   width: 100%;
 }
 
+/* Textual description of farm partnerships */
 .partnering-farms-text {
   text-align: center;
   padding: 0 45px;
@@ -132,11 +139,13 @@
   margin: 0;
 }
 
+/* Container for the embedded map */
 .partnering-farms-map {
   padding: 0 25px;
   margin-top: 45px;
 }
 
+/* Styles for the actual map */
 #map {
   width: 100%;
   height: 350px;
@@ -146,66 +155,66 @@
   margin: 0 auto 45px auto;
 }
 
-/* Desktop-specific styles */
+/* ===== Desktop Styles (min-width: 1024px) ===== */
 @media (min-width: 1024px) {
   /* ===== Produce Intro Section ===== */
 
-  /* Scaled title up and simply pushed it out abit by design */
+  /* Larger font and more spacing for title on wider screens */
   .produce-intro-title {
     font-size: 36px;
     margin-left: 45px;
   }
 
-  /* Adjusted the intro text positioning. Font-Size is good. */
+  /* Wider text area for better readability */
   .produce-intro-text {
     margin-top: 30px;
     margin-left: 45px;
     width: 590px;
   }
-  /* ===== Produce Card Section =====*/
 
-  /* Reset the margin top, and made it consistently with 45 padding */
+  /* Layout the product cards with consistent spacing */
   .produce-cards {
     grid-template-columns: repeat(3, 1fr);
-
     padding: 45px;
     margin-top: 0px;
   }
 
-  /* Product Type and Price */
+  /* Align type and price info side by side */
   .produce-type-and-price {
     margin-top: 28px;
     display: flex;
     font-size: 20px;
   }
 
-  /* Note to self: renamed this class - will break product page - Fix */
+  /* Match styling of weight text with product info */
   .produce-weight {
     margin-top: 28px;
     display: flex;
     font-size: 20px;
   }
 
-  /* Add to Basket Button on top of the cards */
+  /* Button width remains consistent on desktop */
   .produce-shopping-button {
     width: 30%;
   }
 
+  /* More vertical spacing between cards on desktop */
   .produce-card {
     margin-bottom: 60px;
   }
 
+  /* Adds horizontal spacing between cards (if used in row layout) */
   .produce-card-spacing {
     margin-right: 30px;
   }
 
+  /* Larger images for better display on desktop */
   .produce-card img {
     width: 100%;
     height: 432px;
   }
 
-  /* ===== Map section =====*/
-  /* Wrapper for both text and map sections */
+  /* Wrapper for both text and map, placed side by side */
   .partnering-farms-wrapper {
     display: flex;
     align-items: center;
@@ -214,6 +223,7 @@
     outline: 2px solid black;
   }
 
+  /* Text area inside partnering farms layout */
   .partnering-farms-text {
     flex: 1;
     margin: 0;
@@ -225,6 +235,7 @@
     align-items: center;
   }
 
+  /* Map area inside partnering farms layout */
   .partnering-farms-map {
     flex: 2;
     padding: 100px;
@@ -232,6 +243,7 @@
     margin-top: 0px;
   }
 
+  /* Adjusted map size and styling for desktop */
   #map {
     max-width: 600px;
     height: 500px;

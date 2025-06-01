@@ -37,6 +37,10 @@
     <link rel="preload" href="./css/Global.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="./css/Global.css" /></noscript>
 
+    <!-- Preload Utilities CSS for performance -->
+    <link rel="preload" href="./css/Utilities.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./css/Utilities.css" /></noscript>
+
     <!-- Page-specific styles -->
     <link rel="stylesheet" href="./css/LandingPage.css" />
     <link rel="stylesheet" href="./css/Navbar.css" />
@@ -87,7 +91,7 @@
       </div>
       <div class="side-menu-border"></div>
       <nav class="menu-content" role="navigation">
-        <ul class="menu-items large-body">
+        <ul class="menu-items text-large">
           <li><a href="/pages/product.html" aria-label="Go to product page">Products</a></li>
           <li><a href="/pages/chatbot.html" aria-label="Go to the chatbot">Chat</a></li>
         </ul>
@@ -382,7 +386,7 @@
                 </svg>
               </span>
             </button>
-            <p class="display-flex popular-produce-type-and-price large-body">
+            <p class="display-flex popular-produce-type-and-price text-large">
               <span id="product-oats">Oats</span>
               <span>16 kr / kg</span>
             </p>
@@ -411,7 +415,7 @@
                 </svg>
               </span>
             </button>
-            <p class="display-flex popular-produce-type-and-price large-body">
+            <p class="display-flex popular-produce-type-and-price text-large">
               <span id="product-red-onions">Red Onions</span>
               <span>45 kr / kg</span>
             </p>
@@ -440,7 +444,7 @@
                 </svg>
               </span>
             </button>
-            <p class="display-flex popular-produce-type-and-price large-body">
+            <p class="display-flex popular-produce-type-and-price text-large">
               <span id="product-garlic">Garlic</span>
               <span>38 kr</span>
             </p>
@@ -453,31 +457,41 @@
     <section class="newsletter-section" aria-labelledby="newsletter-heading">
       <h2 class="newsletter-title" id="newsletter-heading">FRAM</h2>
       <hr class="newsletter-divider" />
-      <h3 class="newsletter-header">STAY UPDATED</h3>
-      <p class="newsletter-subtext">
-        Sign up for our newsletter to be the first <br />
-        to know about new produce or other <br />
-        exciting news!
-      </p>
-      <form class="newsletter-form" onsubmit="newsletterSignup()" role="form">
-        <input
-          type="text"
-          name="first-name"
-          id="first-name"
-          placeholder="First name"
-          class="newsletter-input margin-bottom-12"
-          required
-        /><br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="E-mail address"
-          class="newsletter-input margin-bottom-24"
-          required
-        /><br />
-        <button type="submit" class="newsletter-button">Send</button>
-      </form>
+
+      <!-- Form Container (visible by default) -->
+      <div id="form-container">
+        <h3 class="newsletter-header">STAY UPDATED</h3>
+        <p class="newsletter-subtext">
+          Sign up for our newsletter to be the first <br />
+          to know about new produce or other <br />
+          exciting news!
+        </p>
+        <form class="newsletter-form" role="form">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First name"
+            class="newsletter-input margin-bottom-12"
+            required
+          /><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail address"
+            class="newsletter-input margin-bottom-24"
+            required
+          /><br />
+          <button type="submit" class="newsletter-button">Send</button>
+        </form>
+      </div>
+
+      <!-- Success Message (hidden by default) -->
+      <div id="success-message" class="newsletter-success-container">
+        <p class="newsletter-success-message">Thank you for signing up!</p>
+        <button onclick="location.reload()" class="newsletter-button">Sign Up Again</button>
+      </div>
     </section>
 
     <!-- User feedback when adding an product to basket - use inline styling -->
